@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.hhit.dao.UserDao">
+   <select id="selectByusername" resultType="com.hhit.model.User" parameterType="String">
+      select * from user where username=#{username}
+   </select>
+   <!--依据用户id返回用户所有的信息-->
+   <select id="getUserById" resultType="com.hhit.model.User" parameterType="Int">
+      select * from user where id=#{id}
+   </select>
+    <!--依据用户userid返回用户的所有的信息-->
+    <select id="getUserByUserid" resultType="com.hhit.model.User" parameterType="String">
+        select * from user where userid=#{userid}
+    </select>
+
+   <select id="getUser2ByUserid" resultType="com.hhit.model.User" parameterType="com.hhit.model.User">
+      select * from fuser where userid=#{userid}
+   </select>
+   <!--这个求职者数据库账号登陆的使用的-->
+   <select id="getUser" resultType="com.hhit.model.User" parameterType="com.hhit.model.User">
+      select * from user where username=#{username} and password=#{password}
+   </select>
+   <!--招聘者数据库账号登陆的使用-->
+   <select id="getUser2" resultType="com.hhit.model.User" parameterType="com.hhit.model.User">
+      select * from fuser where username=#{username} and password=#{password}
+   </select>
+
+   <!--这个是求职者QQ第三方登录无就增加，有就修改，这是增加的-->
+   <insert id="insertUser" parameterType="com.hhit.model.User">
+      insert into user (userid,nickname,username,password,photouri,year,city,gender) VALUES (#{userid},#{nickname},
+      #{username},#{password},#{photouri},#{year},#{city},#{gender})
+   </insert>
+   <!--求职者QQ三方登录的更新的操作-->
+   <update id="updateUser" parameterType="com.hhit.model.User">
+      update user set nickname=#{nickname},photouri=#{photouri},year=#{year},city=#{city},gender=#{gender} where userid=#{userid}
+   </update>
+   <!--招聘者数据库增加-->
+   <insert id="insertUser2" parameterType="com.hhit.model.User">
+      insert into fuser (userid,nickname,username,password,photouri,year,city,gender) VALUES (#{userid},#{nickname},
+      #{username},#{password},#{photouri},#{year},#{city},#{gender})
+   </insert>
+
+   <update id="updateUSer2" parameterType="com.hhit.model.User">
+      update fuser set nickname=#{nickname},photouri=#{photouri},year=#{year},city=#{city},gender=#{gender} where userid=#{userid}
+   </update>
+   <!--求职者用户注册-->
+
+    <!--
+       <select id="selectLogin" resultType="com.hhit.model.User" parameterType="String">
+          select * from user where username=#{username}
+       </select>
+
+        <select id="selectlogin" resultType="com.hhit.model.User" parameterType="com.hhit.model.User">
+            select * from user where username=#{username} and password=#{password}
+        </select>
+
+        <update id="updatepass" parameterType="com.hhit.model.User">
+            UPDATE user set password=#{password} where username=#{username}
+        </update>
+
+        <select id="userSearchall" resultType="com.hhit.model.User" >
+            select * from user
+        </select>
+
+        <delete id="deleteuser" parameterType="Int">
+            delete from user where id=#{id}
+        </delete>
+
+        <insert id="adduser" parameterType="com.hhit.model.User">
+            insert into user(username,loginname,password) values(#{username},#{loginname},#{password})
+        </insert>
+
+        <update id="updateuser" parameterType="com.hhit.model.User">
+            update user set username=#{username},loginname=#{loginname},password=#{password}
+            where id=#{id}
+        </update>-->
+
+
+</mapper>
