@@ -9,10 +9,6 @@
     <list default="true" id="b607febe-3479-47f0-8987-135eedef4ce4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AndroidServ/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobDao.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/model/Job.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/model/Job.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobService.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/../AndroidServ/out/" />
@@ -38,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JobServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="222">
@@ -48,18 +44,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobDao.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JobDao.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="13" column="169" lean-forward="false" selection-start-line="13" selection-start-column="169" selection-end-line="13" selection-end-column="169" />
+            <state relative-caret-position="369">
+              <caret line="14" column="70" lean-forward="false" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
               <folding>
-                <marker date="1524653653906" expanded="true" signature="302:342" ph="select * fro... jobhome" />
-                <marker date="1524653653906" expanded="true" signature="475:492" ph="select * fro... job" />
-                <marker date="1524653653906" expanded="true" signature="475:496" ph="select * fro... jobhome" />
-                <marker date="1524653653906" expanded="true" signature="475:511" ph="select * fro... jobhome" />
-                <marker date="1524653653906" expanded="true" signature="652:814" ph="select * fro... jobhome" />
-                <marker date="1524653653906" expanded="true" signature="1107:1175" ph="select * fro... jobhome" />
+                <marker date="1524661007374" expanded="true" signature="302:342" ph="select * fro... jobhome" />
+                <marker date="1524661007374" expanded="true" signature="475:492" ph="select * fro... job" />
+                <marker date="1524661007374" expanded="true" signature="475:496" ph="select * fro... jobhome" />
+                <marker date="1524661007374" expanded="true" signature="475:511" ph="select * fro... jobhome" />
+                <marker date="1524661007374" expanded="true" signature="652:841" ph="select * fro... jobhome" />
+                <marker date="1524661007374" expanded="true" signature="1134:1202" ph="select * fro... jobhome" />
               </folding>
             </state>
           </provider>
@@ -68,8 +64,8 @@
       <file leaf-file-name="UserDao.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/UserDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="1247">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <marker date="1524485524689" expanded="true" signature="320:365" ph="select * fro... user" />
                 <marker date="1524485524689" expanded="true" signature="493:526" ph="select * fro... user" />
@@ -99,7 +95,7 @@
       <file leaf-file-name="JobServiceimpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
+            <state relative-caret-position="551">
               <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -204,8 +200,8 @@
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobDao.java" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobService.java" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java" />
-        <option value="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java" />
+        <option value="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml" />
       </list>
     </option>
   </component>
@@ -236,8 +232,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="103" />
-    <option name="y" value="36" />
+    <option name="x" value="160" />
+    <option name="y" value="11" />
     <option name="width" value="1832" />
     <option name="height" value="991" />
   </component>
@@ -257,16 +253,73 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="hhit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -490,15 +543,24 @@
       <workItem from="1524479959442" duration="793000" />
       <workItem from="1524484920423" duration="1172000" />
       <workItem from="1524637662322" duration="2604000" />
-      <workItem from="1524649680764" duration="4363000" />
+      <workItem from="1524649680764" duration="4404000" />
+      <workItem from="1524660659839" duration="400000" />
     </task>
+    <task id="LOCAL-00001" summary="1 多重组合和模糊查询初稿设计完毕">
+      <created>1524654080876</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524654080876</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49728000" />
+    <option name="totallyTimeSpent" value="50169000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="103" y="36" width="1832" height="991" extended-state="0" />
+    <frame x="160" y="11" width="1832" height="991" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -520,10 +582,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.107184924" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16018845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24310915" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23649393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -541,6 +603,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1 多重组合和模糊查询初稿设计完毕" />
+    <option name="LAST_COMMIT_MESSAGE" value="1 多重组合和模糊查询初稿设计完毕" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -945,7 +1011,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
+        <state relative-caret-position="551">
           <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -963,8 +1029,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/UserDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="1247">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
             <marker date="1524485524689" expanded="true" signature="320:365" ph="select * fro... user" />
             <marker date="1524485524689" expanded="true" signature="493:526" ph="select * fro... user" />
@@ -980,26 +1046,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="13" column="169" lean-forward="false" selection-start-line="13" selection-start-column="169" selection-end-line="13" selection-end-column="169" />
-          <folding>
-            <marker date="1524653653906" expanded="true" signature="302:342" ph="select * fro... jobhome" />
-            <marker date="1524653653906" expanded="true" signature="475:492" ph="select * fro... job" />
-            <marker date="1524653653906" expanded="true" signature="475:496" ph="select * fro... jobhome" />
-            <marker date="1524653653906" expanded="true" signature="475:511" ph="select * fro... jobhome" />
-            <marker date="1524653653906" expanded="true" signature="652:814" ph="select * fro... jobhome" />
-            <marker date="1524653653906" expanded="true" signature="1107:1175" ph="select * fro... jobhome" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="14" column="70" lean-forward="false" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+          <folding>
+            <marker date="1524661007374" expanded="true" signature="302:342" ph="select * fro... jobhome" />
+            <marker date="1524661007374" expanded="true" signature="475:492" ph="select * fro... job" />
+            <marker date="1524661007374" expanded="true" signature="475:496" ph="select * fro... jobhome" />
+            <marker date="1524661007374" expanded="true" signature="475:511" ph="select * fro... jobhome" />
+            <marker date="1524661007374" expanded="true" signature="652:841" ph="select * fro... jobhome" />
+            <marker date="1524661007374" expanded="true" signature="1134:1202" ph="select * fro... jobhome" />
+          </folding>
         </state>
       </provider>
     </entry>

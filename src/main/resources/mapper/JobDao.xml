@@ -11,7 +11,8 @@
     </select>
     <!--通过多重组合查询-->
     <select id="getJobByKind" resultType="com.hhit.model.Job" parameterType="com.hhit.model.Job">
-        select * from jobhome where (jobtype=#{jobtype} OR #{jobtype} is NULL ) and (payway=#{payway} OR  #{payway} is NULL ) and (gender=#{gender} OR #{gender} is NULL )
+        select * from jobhome where (jobtype=#{jobtype} OR #{jobtype} is NULL ) and (payway=#{payway} OR  #{payway} is NULL )
+        and (gender=#{gender} OR #{gender}='all' or #{gender} is NULL )
     </select>
     <!--select * from jobhome where jobtype like and payway like and payway like-->
     <!--select * from jobhome where (jobtype=#{jobtype} or #{jobtype} is null)-->

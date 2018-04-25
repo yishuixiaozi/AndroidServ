@@ -50,7 +50,7 @@ public class JobServlet {
             System.out.println("多重组和查询");
             job2.setJobtype("校园兼职");
             job2.setPayway("日结");
-            /*job2.setGender("男");*/
+           job2.setGender("all");
             jobList=jobService.getJobByKind(job2);
         }else if(querytype.equals("like")) {//按关键字查询
             jobList=jobService.getJobByLike("兵");
