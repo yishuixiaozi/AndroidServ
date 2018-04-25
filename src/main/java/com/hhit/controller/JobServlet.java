@@ -4,6 +4,7 @@ import com.hhit.model.Job;
 import com.hhit.service.JobService;
 import com.hhit.utils.*;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
@@ -40,6 +41,28 @@ public class JobServlet {
         ResponseUtils.renderJson(response, JackJsonUtils.toJson(listObject));
     }
 
+    @RequestMapping("/getJobByType")
+    public void getJobByType(HttpServletResponse response, HttpServletRequest request){
+        /*String querytype=job1.getQuerytype();*/
+        Job job2=new Job();
+        String querytype="kind";
+        if (querytype.equals("kind")){//按多重组合查询
+            System.out.println("多重组和查询");
+            job2.setJobtype("校园兼职");
+            job2.setPayway("日结");
+            /*job2.setGender("男");*/
+            jobList=jobService.getJobByKind(job2);
+        }else if(querytype.equals("like")) {//按关键字查询
+            jobList=jobService.getJobByLike("兵");
+        }else {//默认查询，查询所有的 内容
+            System.out.println("默认查询");
+        }
+        listObject.setItems(jobList);
+        listObject.setCode(StatusCode.CODE_SUCCESS);
+        listObject.setMsg("访问成功");
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
+    }
+
     /**
      * 获取id获取兼职信息的详细内容
      * @param request
@@ -54,4 +77,6 @@ public class JobServlet {
         singleObject.setMsg("访问成功");
         ResponseUtils.renderJson(response,JackJsonUtils.toJson(singleObject));
     }
+
+
 }

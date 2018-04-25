@@ -6,7 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b607febe-3479-47f0-8987-135eedef4ce4" name="Default" comment="" />
+    <list default="true" id="b607febe-3479-47f0-8987-135eedef4ce4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AndroidServ/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobDao.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/model/Job.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/model/Job.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobService.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/../AndroidServ/out/" />
     <ignored path="$PROJECT_DIR$/../AndroidServ/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,13 +26,130 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="UserServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/UserServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="147" column="5" lean-forward="true" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
+            <state relative-caret-position="3944">
+              <caret line="147" column="5" lean-forward="false" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="13" column="169" lean-forward="false" selection-start-line="13" selection-start-column="169" selection-end-line="13" selection-end-column="169" />
+              <folding>
+                <marker date="1524653653906" expanded="true" signature="302:342" ph="select * fro... jobhome" />
+                <marker date="1524653653906" expanded="true" signature="475:492" ph="select * fro... job" />
+                <marker date="1524653653906" expanded="true" signature="475:496" ph="select * fro... jobhome" />
+                <marker date="1524653653906" expanded="true" signature="475:511" ph="select * fro... jobhome" />
+                <marker date="1524653653906" expanded="true" signature="652:814" ph="select * fro... jobhome" />
+                <marker date="1524653653906" expanded="true" signature="1107:1175" ph="select * fro... jobhome" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/UserDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding>
+                <marker date="1524485524689" expanded="true" signature="320:365" ph="select * fro... user" />
+                <marker date="1524485524689" expanded="true" signature="493:526" ph="select * fro... user" />
+                <marker date="1524485524689" expanded="true" signature="670:711" ph="select * fro... user" />
+                <marker date="1524485524689" expanded="true" signature="836:878" ph="select * fro... fuser" />
+                <marker date="1524485524689" expanded="true" signature="1019:1089" ph="select * fro... user" />
+                <marker date="1524485524689" expanded="true" signature="1228:1299" ph="select * fro... fuser" />
+                <marker date="1524485524689" expanded="true" signature="1423:1601" ph="insert into user... " />
+                <marker date="1524485524689" expanded="true" signature="1711:1834" ph="update user " />
+                <marker date="1524485524689" expanded="true" signature="1938:2117" ph="insert into fuser... " />
+                <marker date="1524485524689" expanded="true" signature="2203:2327" ph="update fuser... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobServiceimpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="454">
+              <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
+                <element signature="e#514#515#0" expanded="true" />
+                <element signature="e#558#559#0" expanded="true" />
+                <element signature="e#628#629#0" expanded="true" />
+                <element signature="e#682#683#0" expanded="true" />
+                <element signature="e#742#743#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Job.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/model/Job.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="696">
+              <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+              <folding>
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
+                <element signature="e#696#697#0" expanded="true" />
+                <element signature="e#740#741#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#804#805#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+                <element signature="e#888#889#0" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+                <element signature="e#950#951#0" expanded="true" />
+                <element signature="e#994#995#0" expanded="true" />
+                <element signature="e#1030#1031#0" expanded="true" />
+                <element signature="e#1066#1067#0" expanded="true" />
+                <element signature="e#1098#1099#0" expanded="true" />
+                <element signature="e#1148#1149#0" expanded="true" />
+                <element signature="e#1190#1191#0" expanded="true" />
+                <element signature="e#1220#1221#0" expanded="true" />
+                <element signature="e#1249#1250#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,6 +165,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../AndroidServ" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -66,18 +194,18 @@
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/utils/ListObject.java" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/utils/JackJsonUtils.java" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/utils/ResponseUtils.java" />
-        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobDao.java" />
-        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobService.java" />
-        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java" />
-        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java" />
-        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/model/Job.java" />
-        <option value="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/UserService.java" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/model/User.java" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/UserServiceimpl.java" />
-        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/UserServlet.java" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/UserDao.xml" />
+        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/UserServlet.java" />
+        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/model/Job.java" />
+        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobDao.java" />
+        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobService.java" />
+        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java" />
+        <option value="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml" />
+        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java" />
       </list>
     </option>
   </component>
@@ -108,11 +236,12 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="268" />
-    <option name="y" value="47" />
+    <option name="x" value="103" />
+    <option name="y" value="36" />
     <option name="width" value="1832" />
-    <option name="height" value="1000" />
+    <option name="height" value="991" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -128,7 +257,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,69 +268,10 @@
               <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hhit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hhit" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hhit" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceimpl" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -415,16 +488,17 @@
       <workItem from="1524367188699" duration="9309000" />
       <workItem from="1524477204961" duration="538000" />
       <workItem from="1524479959442" duration="793000" />
-      <workItem from="1524484920423" duration="1013000" />
+      <workItem from="1524484920423" duration="1172000" />
+      <workItem from="1524637662322" duration="2604000" />
+      <workItem from="1524649680764" duration="4363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42602000" />
+    <option name="totallyTimeSpent" value="49728000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="268" y="47" width="1832" height="1000" extended-state="0" />
-    <editor active="true" />
+    <frame x="103" y="36" width="1832" height="991" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -445,11 +519,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18881118" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.107184924" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2320838" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24310915" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -479,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -513,9 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -533,7 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -541,7 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -549,9 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -574,7 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -608,9 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -628,7 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -636,7 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,7 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -667,9 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,9 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -810,51 +862,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobDao.java">
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="667">
+          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobService.java">
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="116">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java">
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state relative-caret-position="406">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/UserServiceimpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3944">
+          <caret line="147" column="5" lean-forward="false" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/model/Job.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="696">
+          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding>
-            <element signature="e#516#517#0" expanded="false" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1190#1191#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/model/User.java">
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="232">
+          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/UserDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
+        <state relative-caret-position="203">
           <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
             <marker date="1524485524689" expanded="true" signature="320:365" ph="select * fro... user" />
@@ -871,64 +980,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="213">
+          <caret line="13" column="169" lean-forward="false" selection-start-line="13" selection-start-column="169" selection-end-line="13" selection-end-column="169" />
           <folding>
-            <marker date="1524190246853" expanded="true" signature="302:342" ph="select * fro... jobhome" />
-            <marker date="1524190246853" expanded="true" signature="475:492" ph="select * fro... job" />
-            <marker date="1524190246853" expanded="true" signature="475:496" ph="select * fro... jobhome" />
-            <marker date="1524190246853" expanded="true" signature="475:511" ph="select * fro... jobhome" />
+            <marker date="1524653653906" expanded="true" signature="302:342" ph="select * fro... jobhome" />
+            <marker date="1524653653906" expanded="true" signature="475:492" ph="select * fro... job" />
+            <marker date="1524653653906" expanded="true" signature="475:496" ph="select * fro... jobhome" />
+            <marker date="1524653653906" expanded="true" signature="475:511" ph="select * fro... jobhome" />
+            <marker date="1524653653906" expanded="true" signature="652:814" ph="select * fro... jobhome" />
+            <marker date="1524653653906" expanded="true" signature="1107:1175" ph="select * fro... jobhome" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="222">
+          <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/UserServiceimpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/UserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="147" column="5" lean-forward="true" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

@@ -17,6 +17,43 @@ public class Job implements Serializable{
     private String workplace;
     private String workdescribe;
 
+    private String jobtype;
+    private String gender;
+    private String querytype;
+    private String queryfield;
+
+    public String getQueryfield() {
+        return queryfield;
+    }
+
+    public void setQueryfield(String queryfield) {
+        this.queryfield = queryfield;
+    }
+
+    public String getJobtype() {
+        return jobtype;
+    }
+
+    public void setJobtype(String jobtype) {
+        this.jobtype = jobtype;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getQuerytype() {
+        return querytype;
+    }
+
+    public void setQuerytype(String querytype) {
+        this.querytype = querytype;
+    }
+
     public int getUserid() {
         return userid;
     }

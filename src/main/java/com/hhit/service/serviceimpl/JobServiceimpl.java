@@ -22,4 +22,14 @@ public class JobServiceimpl implements JobService{
     public Job getJobById(int id) {
         return jobDao.getJobById(id);
     }
+
+    @Override
+    public List<Job> getJobByLike(String queryfield) {
+        return jobDao.getJobByLike(queryfield);
+    }
+
+    @Override
+    public List<Job> getJobByKind(Job job) {
+        return jobDao.getJobByKind(job);
+    }
 }
