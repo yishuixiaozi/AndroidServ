@@ -11,12 +11,20 @@
     </select>
     <!--通过多重组合查询-->
     <select id="getJobByKind" resultType="com.hhit.model.Job" parameterType="com.hhit.model.Job">
-        select * from jobhome where (jobtype=#{jobtype} OR #{jobtype} is NULL ) and (payway=#{payway} OR  #{payway} is NULL )
-        and (gender=#{gender} OR #{gender}='all' or #{gender} is NULL )
+        select * from jobhome where (jobtype=#{job.jobtype} OR #{job.jobtype} is NULL ) and (payway=#{job.payway} OR  #{job.payway} is NULL )
+        and (gender=#{job.gender} OR #{job.gender}='all' or #{job.gender} is NULL )
     </select>
     <!--select * from jobhome where jobtype like and payway like and payway like-->
     <!--select * from jobhome where (jobtype=#{jobtype} or #{jobtype} is null)-->
+    <select id="getJobBykind" resultType="com.hhit.model.Job">
+        select * from jobhome where (jobtype=#{job.jobtype} OR #{job.jobtype} is NULL OR #{job.jobtype}='不限' OR #{job.jobtype}='兼职类型')
+        and (payway=#{job.payway} OR  #{job.payway} is NULL OR #{job.payway}='不限' OR #{job.payway}='结算时间')
+        and (gender=#{job.gender} OR #{job.gender}='不限' or #{job.gender} is NULL OR #{job.gender}='性别要求') limit #{pagenum},8
+    </select>
 
+    <select id="getJobBylike" resultType="com.hhit.model.Job">
+        select * from jobhome where title like CONCAT('%',#{queryfield},'%') limit #{pagenum},8
+    </select>
     <!--模糊查询 -->
     <select id="getJobByLike" resultType="com.hhit.model.Job" parameterType="String">
         select * from jobhome where title like CONCAT('%',#{queryfield},'%')

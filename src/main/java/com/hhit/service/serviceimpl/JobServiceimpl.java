@@ -32,4 +32,14 @@ public class JobServiceimpl implements JobService{
     public List<Job> getJobByKind(Job job) {
         return jobDao.getJobByKind(job);
     }
+
+    @Override
+    public List<Job> getJobBykind(Job job, int pagenum) {
+        return jobDao.getJobBykind(job,pagenum);
+    }
+
+    @Override
+    public List<Job> getJobBylike(String queryfield, int pagenum) {
+        return jobDao.getJobBylike(queryfield,pagenum);
+    }
 }
