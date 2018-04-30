@@ -5,4 +5,8 @@
         insert into collection(jobid,userid,time,title,paymoney,payway,worktime,jobimageuri) VALUES
          (#{jobid},#{userid},#{time},#{title},#{paymoney},#{payway},#{worktime},#{jobimageuri})
     </insert>
+
+    <select id="getAllCollection" parameterType="String" resultType="com.hhit.model.CollectionBean">
+        select * from collection where userid=#{userid}
+    </select>
 </mapper>

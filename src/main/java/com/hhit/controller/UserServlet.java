@@ -50,8 +50,9 @@ public class UserServlet {
         }else {
             user=userService.getUser2(user1);
         }
+
         //singleObject.setObject(user);
-        singleObject.setCode(StatusCode.CODE_SUCCESS);
+        singleObject.setCode(user.getUserid());
         if (user==null){
             System.out.println("数据库没有这个用户");
             singleObject.setMsg("failure");
