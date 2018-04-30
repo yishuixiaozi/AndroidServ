@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Job implements Serializable{
     private int id;
-    private int userid;
+    private String userid;
     private String title;
     private String paymoney;
     private String payway;
@@ -54,11 +54,11 @@ public class Job implements Serializable{
         this.querytype = querytype;
     }
 
-    public int getUserid() {
+    public String getUserid() {
         return userid;
     }
 
-    public void setUserid(int userid) {
+    public void setUserid(String userid) {
         this.userid = userid;
     }
 

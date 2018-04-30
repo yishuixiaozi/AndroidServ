@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 public interface UserDao {
     User selectByusername(String username);//用户查询测试
-    User getUserById(int id);//通过用户id获取信息，用于兼职详细信息里边的值的书写
+    User getUserById(String id);//通过用户id获取信息，用于兼职详细信息里边的值的书写
     User getUser(User user);//自己用户的登陆
     User getUserByUserid(String userid);//求职者用户查询，判断是否有值的，后期用于增加或者修该
 

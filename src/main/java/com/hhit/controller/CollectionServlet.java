@@ -47,4 +47,29 @@ public class CollectionServlet {
         listObject.setItems(collectionBeanList);
         ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));//数据访问
     }
+
+    @RequestMapping("/getCollectionTag")
+    public void getCollectionTag(HttpServletRequest request,HttpServletResponse response){
+        String userid=request.getParameter("userid");
+        int id= Integer.parseInt(request.getParameter("jobid"));
+        System.out.println("------"+id);
+        collectionBean=collectionService.getCollectionTag(userid,id);
+        if (collectionBean==null){//如果为空
+            singleObject.setMsg("no");
+        }
+        else {
+            singleObject.setMsg("yes");
+        }
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson(singleObject));
+    }
+    @RequestMapping("/deleteCollection")
+    public void deleteCollection(HttpServletRequest request,HttpServletResponse response){
+        String userid=request.getParameter("userid");
+        int id= Integer.parseInt(request.getParameter("jobid"));
+        System.out.println("----id测试"+id);
+        collectionService.deleteCollection(userid,id);
+        singleObject.setMsg("success");
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson(singleObject));
+
+    }
 }

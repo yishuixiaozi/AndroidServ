@@ -22,4 +22,14 @@ public class CollectionServiceimpl implements CollectionService{
     public List<CollectionBean> getAllCollection(String userid) {
         return collectionDao.getAllCollection(userid);
     }
+
+    @Override
+    public CollectionBean getCollectionTag(String userid, int jobid) {
+        return collectionDao.getCollectionTag(userid,jobid);
+    }
+
+    @Override
+    public void deleteCollection(String userid, int jobid) {
+        collectionDao.deleteCollection(userid,jobid);
+    }
 }

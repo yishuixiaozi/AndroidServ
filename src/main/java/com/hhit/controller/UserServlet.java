@@ -26,7 +26,7 @@ public class UserServlet {
      * @param response
      */
     @RequestMapping("/getUserById")
-    public void getUserById(HttpServletRequest request, HttpServletResponse response,int userid){
+    public void getUserById(HttpServletRequest request, HttpServletResponse response,String userid){
         System.out.println("getUserById----------"+userid);
         user=userService.getUserById(userid);
         user.setPassword(" ");

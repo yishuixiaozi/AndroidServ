@@ -4,7 +4,7 @@ import com.hhit.model.User;
 
 public interface UserService {
     User selectByusername(String username);
-    User getUserById(int id);
+    User getUserById(String id);
     User getUser(User user);
     User getUser2(User user);
     User getUserByUserid(String userid);//判断用户是否存在的

@@ -17,7 +17,7 @@ public class UserServiceimpl implements UserService{
         return userDao.selectByusername(username);
     }
     @Override
-    public User getUserById(int id) {
+    public User getUserById(String id) {
         return userDao.getUserById(id);
     }
     @Override

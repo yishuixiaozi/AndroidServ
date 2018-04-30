@@ -9,4 +9,11 @@
     <select id="getAllCollection" parameterType="String" resultType="com.hhit.model.CollectionBean">
         select * from collection where userid=#{userid}
     </select>
+
+    <select id="getCollectionTag" resultType="com.hhit.model.CollectionBean">
+        select * from collection where userid=#{userid} and jobid=#{jobid}
+    </select>
+    <delete id="deleteCollection">
+        delete from collection where userid=#{userid} and jobid=#{jobid}
+    </delete>
 </mapper>
