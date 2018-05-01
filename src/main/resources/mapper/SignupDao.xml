@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hhit.dao.SignupDao">
+    <insert id="addSignup" parameterType="com.hhit.model.SignupBean">
+        insert into signup(jobid,userid,time,title,paymoney,payway,worktime,jobimageuri) VALUES
+        (#{jobid},#{userid},#{time},#{title},#{paymoney},#{payway},#{worktime},#{jobimageuri})
+    </insert>
+
+    <select id="searchSignup" resultType="com.hhit.model.SignupBean">
+        select * from signup where userid=#{userid} and jobid=#{jobid}
+    </select>
+</mapper>
