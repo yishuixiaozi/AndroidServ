@@ -2,10 +2,7 @@ package com.hhit.controller;
 
 import com.hhit.model.SignupBean;
 import com.hhit.service.SignupService;
-import com.hhit.utils.JackJsonUtils;
-import com.hhit.utils.ListObject;
-import com.hhit.utils.ResponseUtils;
-import com.hhit.utils.SingleObject;
+import com.hhit.utils.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -55,5 +52,15 @@ public class SignupServlet {
             singleObject.setMsg("yes");
         }
         ResponseUtils.renderJson(response,JackJsonUtils.toJson(singleObject));
+    }
+
+    @RequestMapping("/getAllSignup")
+    public void getAllSignup(HttpServletRequest request,HttpServletResponse response){
+        String userid=request.getParameter("userid");
+        signupBeanList=signupService.getAllSignup(userid);
+        listObject.setCode(StatusCode.CODE_SUCCESS);
+        listObject.setMsg("访问成功");
+        listObject.setItems(signupBeanList);
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
     }
 }

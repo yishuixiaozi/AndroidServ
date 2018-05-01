@@ -9,4 +9,8 @@
     <select id="searchSignup" resultType="com.hhit.model.SignupBean">
         select * from signup where userid=#{userid} and jobid=#{jobid}
     </select>
+
+    <select id="getAllSignup" resultType="com.hhit.model.SignupBean" parameterType="String">
+        select * from signup where userid=#{userid}
+    </select>
 </mapper>
