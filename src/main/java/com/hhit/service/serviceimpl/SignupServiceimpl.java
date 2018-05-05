@@ -26,4 +26,9 @@ public class SignupServiceimpl implements SignupService{
     public List<SignupBean> getAllSignup(String userid) {
         return signupDao.getAllSignup(userid);
     }
+
+    @Override
+    public void deleteSignup(int signupid) {
+        signupDao.deleteSignup(signupid);
+    }
 }

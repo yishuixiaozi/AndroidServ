@@ -63,4 +63,11 @@ public class SignupServlet {
         listObject.setItems(signupBeanList);
         ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
     }
+
+    @RequestMapping("/deleteSignup")
+    public void deleteSignup(HttpServletRequest request,HttpServletResponse response){
+        int signupid= Integer.parseInt(request.getParameter("signupid"));
+        signupService.deleteSignup(signupid);
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson("success"));
+    }
 }

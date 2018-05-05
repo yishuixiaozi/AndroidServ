@@ -8,4 +8,5 @@ public interface SignupService {
     void addSignup(SignupBean signupBean);
     SignupBean searchSignup(String userid,int jobid);
     List<SignupBean> getAllSignup(String userid);
+    void deleteSignup(int signupid);
 }
