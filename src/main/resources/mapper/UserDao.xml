@@ -4,7 +4,7 @@
 <!-- 设置为IUserDao接口方法提供sql语句配置 -->
 <mapper namespace="com.hhit.dao.UserDao">
    <select id="selectByusername" resultType="com.hhit.model.User" parameterType="String">
-      select * from user where username=#{username}
+      select * from fuser where username=#{username}
    </select>
    <!--依据用户id返回用户所有的信息-->
    <select id="getUserById" resultType="com.hhit.model.User" parameterType="String">
@@ -45,8 +45,8 @@
    <update id="updateUSer2" parameterType="com.hhit.model.User">
       update fuser set nickname=#{nickname},photouri=#{photouri},year=#{year},city=#{city},gender=#{gender} where userid=#{userid}
    </update>
-   <!--求职者用户注册-->
 
+   <!--这个是服务器端管理员登陆使用-->
     <!--
        <select id="selectLogin" resultType="com.hhit.model.User" parameterType="String">
           select * from user where username=#{username}

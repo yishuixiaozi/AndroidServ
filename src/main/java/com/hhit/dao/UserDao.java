@@ -18,4 +18,5 @@ public interface UserDao {
 
     void insertUser2(User user);//招聘者数据库用户插入
     void updateUser2(User user);//招聘者数据库用户更新
+
 }
