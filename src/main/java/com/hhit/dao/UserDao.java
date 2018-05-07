@@ -4,6 +4,8 @@ import com.hhit.model.User;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 public interface UserDao {
     User selectByusername(String username);//用户查询测试
     User getUserById(String id);//通过用户id获取信息，用于兼职详细信息里边的值的书写
@@ -19,4 +21,6 @@ public interface UserDao {
     void insertUser2(User user);//招聘者数据库用户插入
     void updateUser2(User user);//招聘者数据库用户更新
 
+    List<User> selectAllquser();//求职者用户查询
+    List<User> selectAllfuser();//招聘者用户查询
 }

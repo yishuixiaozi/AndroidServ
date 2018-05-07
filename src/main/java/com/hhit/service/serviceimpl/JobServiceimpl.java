@@ -42,4 +42,9 @@ public class JobServiceimpl implements JobService{
     public List<Job> getJobBylike(String queryfield, int pagenum) {
         return jobDao.getJobBylike(queryfield,pagenum);
     }
+
+    @Override
+    public List<Job> selectAlljob() {
+        return jobDao.selectAlljob();
+    }
 }

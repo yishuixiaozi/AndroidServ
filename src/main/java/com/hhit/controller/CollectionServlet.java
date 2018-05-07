@@ -4,6 +4,7 @@ import com.hhit.model.CollectionBean;
 import com.hhit.service.CollectionService;
 import com.hhit.utils.*;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -71,5 +72,11 @@ public class CollectionServlet {
         singleObject.setMsg("success");
         ResponseUtils.renderJson(response,JackJsonUtils.toJson(singleObject));
 
+    }
+    @RequestMapping("/collectionquery")
+    public String collectionquery(ModelMap modelMap){
+        collectionBeanList=collectionService.collectionquery();
+        modelMap.addAttribute("collectionlist",collectionBeanList);
+        return "collectionquery";
     }
 }

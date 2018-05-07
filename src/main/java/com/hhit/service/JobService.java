@@ -12,4 +12,5 @@ public interface JobService {
     List<Job> getJobByKind(Job job);
     List<Job> getJobBykind(Job job,int pagenum);
     List<Job> getJobBylike(String queryfield,int pagenum);
+    List<Job> selectAlljob();
 }

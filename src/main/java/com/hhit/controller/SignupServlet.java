@@ -4,6 +4,7 @@ import com.hhit.model.SignupBean;
 import com.hhit.service.SignupService;
 import com.hhit.utils.*;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -69,5 +70,11 @@ public class SignupServlet {
         int signupid= Integer.parseInt(request.getParameter("signupid"));
         signupService.deleteSignup(signupid);
         ResponseUtils.renderJson(response,JackJsonUtils.toJson("success"));
+    }
+    @RequestMapping("/signupquery")
+    public String signupquery(ModelMap modelMap){
+        signupBeanList=signupService.signupquery();
+        modelMap.addAttribute("signuplist",signupBeanList);
+        return "signupquery";
     }
 }

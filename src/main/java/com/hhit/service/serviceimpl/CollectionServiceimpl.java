@@ -32,4 +32,9 @@ public class CollectionServiceimpl implements CollectionService{
     public void deleteCollection(String userid, int jobid) {
         collectionDao.deleteCollection(userid,jobid);
     }
+
+    @Override
+    public List<CollectionBean> collectionquery() {
+        return collectionDao.collectionquery();
+    }
 }

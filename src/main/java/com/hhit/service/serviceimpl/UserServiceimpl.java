@@ -6,6 +6,7 @@ import com.hhit.service.UserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Service(value = "userService")
 public class UserServiceimpl implements UserService{
@@ -58,5 +59,15 @@ public class UserServiceimpl implements UserService{
     @Override
     public void updateUser2(User user) {
         userDao.updateUser2(user);
+    }
+
+    @Override
+    public List<User> selectAllquser() {
+        return userDao.selectAllquser();
+    }
+
+    @Override
+    public List<User> selectAllfuser() {
+        return userDao.selectAllfuser();
     }
 }

@@ -16,4 +16,7 @@
     <delete id="deleteCollection">
         delete from collection where userid=#{userid} and jobid=#{jobid}
     </delete>
+    <select id="collectionquery" resultType="com.hhit.model.CollectionBean">
+        select * from collection
+    </select>
 </mapper>

@@ -2,11 +2,10 @@ package com.hhit.controller;
 
 import com.hhit.model.User;
 import com.hhit.service.UserService;
-import com.hhit.utils.JackJsonUtils;
-import com.hhit.utils.ResponseUtils;
-import com.hhit.utils.SingleObject;
-import com.hhit.utils.StatusCode;
+import com.hhit.utils.*;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -15,7 +14,9 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -24,7 +25,10 @@ public class UserServlet {
     @Resource
     private UserService userService;
     User user=new User();//专门用于存取user对象
+
+    List<User> userList=new ArrayList<>();
     SingleObject singleObject=new SingleObject();
+    ListObject listObject=new ListObject();
     /**
      * 通过用户id获取一个user对象
      * @param request
@@ -189,5 +193,30 @@ public class UserServlet {
         }
         return map;
     }
+
+    /**
+     * 求职者用户查询
+     * @param modelMap
+     * @return
+     */
+    @RequestMapping("/quserquery")
+    public String quserquery(ModelMap modelMap){
+        userList=userService.selectAllquser();
+        modelMap.addAttribute("userlist",userList);
+        return "quserquery";
+    }
+
+    /**
+     * 招聘用户查询
+     * @param modelMap
+     * @return
+     */
+    @RequestMapping("/fuserquery")
+    public String fuserquery(ModelMap modelMap){
+        userList=userService.selectAllfuser();
+        modelMap.addAttribute("userlist",userList);
+        return "fuserquery";
+    }
+
 
 }

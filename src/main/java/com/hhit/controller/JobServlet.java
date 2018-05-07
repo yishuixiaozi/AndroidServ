@@ -4,6 +4,7 @@ import com.hhit.model.Job;
 import com.hhit.service.JobService;
 import com.hhit.utils.*;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -95,6 +96,16 @@ public class JobServlet {
         singleObject.setCode(StatusCode.CODE_SUCCESS);
         singleObject.setMsg("访问成功");
         ResponseUtils.renderJson(response,JackJsonUtils.toJson(singleObject));
+    }
+    /**
+     * 服务器端获取兼职信息查询
+     * @param modelMap
+     */
+    @RequestMapping("/jobquery")
+    public String jobquery(ModelMap modelMap){
+        jobList=jobService.selectAlljob();
+        modelMap.addAttribute("joblist",jobList);
+        return "jobquery";
     }
 
 

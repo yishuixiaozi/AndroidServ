@@ -2,6 +2,8 @@ package com.hhit.service;
 
 import com.hhit.model.User;
 
+import java.util.List;
+
 public interface UserService {
     User selectByusername(String username);
     User getUserById(String id);
@@ -14,4 +16,7 @@ public interface UserService {
     void updateUser(User user);
     void insertUser2(User user);
     void updateUser2(User user);
+
+    List<User> selectAllquser();
+    List<User> selectAllfuser();
 }

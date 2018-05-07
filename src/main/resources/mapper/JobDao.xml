@@ -29,4 +29,9 @@
     <select id="getJobByLike" resultType="com.hhit.model.Job" parameterType="String">
         select * from jobhome where title like CONCAT('%',#{queryfield},'%')
     </select>
+
+    <!--服务器端查询所有兼职-->
+    <select id="selectAlljob" resultType="com.hhit.model.Job">
+        select * from jobhome
+    </select>
 </mapper>

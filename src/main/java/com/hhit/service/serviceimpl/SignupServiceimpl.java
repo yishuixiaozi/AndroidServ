@@ -31,4 +31,9 @@ public class SignupServiceimpl implements SignupService{
     public void deleteSignup(int signupid) {
         signupDao.deleteSignup(signupid);
     }
+
+    @Override
+    public List<SignupBean> signupquery() {
+        return signupDao.signupquery();
+    }
 }

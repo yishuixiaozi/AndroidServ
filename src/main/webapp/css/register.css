@@ -1,0 +1,66 @@
+@charset "UTF-8";
+body{
+    width: auto;
+    height: auto;
+    font-family: "微软雅黑","宋体";
+    background: url("../images/lan.jpg") no-repeat ;
+    background-size: 100%;
+    /*filter:alpha(opacity=50);*/
+}
+.inner {
+    width: 500px;
+    margin:0px auto;
+    height: 500px;
+    background-color: white;
+    filter: Alpha(Opacity=50);
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 3%;
+
+    /* background-color:transparent;*/
+}
+.name_input{
+    /*background: url("../images/user1.png")no-repeat 280px ;*/
+    width: 300px;
+    height: 40px;
+    border-radius:5px;
+    border: 1px solid #999999;
+    box-shadow: 1px 1px 3px #cccccc;
+    padding-left: 10px;
+    margin-left: 90px;
+    margin-top: 70px;
+    font-size: 18px;
+    background-color: #F9F9F9;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.pass_input{
+    /*background: url("../images/user1.png")no-repeat 280px ;*/
+    width: 300px;
+    height: 40px;
+    border-radius:5px;
+    border: 1px solid #999999;
+    box-shadow: 1px 1px 3px #cccccc;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-left: 90px;
+    margin-top: 40px;
+    background-color: #F9F9F9;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.p_login{
+    width: 310px;
+    height: 40px;
+    font-size: 16px;
+    margin-left:90px;
+    margin-top: 40px;
+    border-radius:5px;
+    background-color: #F37022;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #9A9A9A;
+}
+.p_login:hover{
+    font-size: 18px;
+    cursor: default;
+    background-color: green;
+}

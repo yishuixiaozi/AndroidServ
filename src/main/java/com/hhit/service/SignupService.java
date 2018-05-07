@@ -9,4 +9,5 @@ public interface SignupService {
     SignupBean searchSignup(String userid,int jobid);
     List<SignupBean> getAllSignup(String userid);
     void deleteSignup(int signupid);
+    List<SignupBean> signupquery();
 }

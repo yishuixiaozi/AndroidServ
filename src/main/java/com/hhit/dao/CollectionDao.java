@@ -12,4 +12,5 @@ public interface CollectionDao {
                                     @Param("jobid") int jobid);
     void deleteCollection(@Param("userid") String userid,
                           @Param("jobid") int jobid);
+    List<CollectionBean> collectionquery();
 }

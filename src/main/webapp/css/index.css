@@ -1,0 +1,158 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "微软雅黑","宋体";
+    /*background-color: gray;*/
+}
+.header{
+    /*width: 1000px;*/
+    height: 35px;
+    /*margin: 0px auto;*/
+    background-color:#F9F9F9 ;
+    border-bottom: #EEEEEE 1px solid;
+}
+/*inner_c是为了使第一行标题栏相关内容居中显示*/
+.inner_c{
+    width: 1000px;
+    /*height: 20px;*/
+    margin: 0px auto;
+    /*border: 1px solid red;*/
+    /*background-color: #38b774;*/
+}
+/*登录界面字体设计*/
+.header_left{
+    float: left;
+    width: 500px;
+    /*background-color: #38b774;*/
+    text-align: left;
+    line-height: 35px;
+    color: #9A9A9A;
+}
+.header_right{
+    float: left;
+    width: 497px;
+    /*background-color:#818496;*/
+    line-height: 35px;
+}
+.header ul{
+    width: 250px;
+    list-style: none;
+    float: left;
+    /* border: 1px solid black;*/
+}
+/*登录注册公司合作设计*/
+.header ul li{
+    float: left;
+    width: 80px;
+    /*border: 1px solid black;*/
+    line-height: 35px;
+    text-align: center;
+    color: #9A9A9A;
+    /*border-right: 1px solid #9A9A9A;*/
+}
+.header ul li a{
+    text-decoration: none;
+    color:#9A9A9A ;
+}
+.header ul li a:hover{
+    text-decoration: none;
+    color: blue;
+}
+/*咨询电话字体设计*/
+.header .hri_right{
+    text-align: right;
+    color: #9A9A9A;
+}
+
+/*菜单展示区*/
+.body_t{
+    width: 100%;
+    /*height: 10%;*/
+    height: 80px;
+    /*background-color: #3aca7a;*/
+    /*float: left;*/
+}
+.body_tl{
+    width: 13%;
+    height: 78px;
+    /*background-color: #191d3a;*/
+    float: left;
+}
+.body_tc{
+    width: 50%;
+    height: 78px;
+    /*background-color:#818496;*/
+    float: left;
+}
+.body_tc ul li{
+    float: left;
+    list-style: none;
+
+}
+.body_tc ul li a{
+    line-height: 78px;
+    padding-left: 55px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.body_tc ul li a:hover{
+    color: blue;
+}
+.body_tr{
+    width: 25%;
+    height: 78px;
+    /*background-color:#191d3a;*/
+    float: left;
+}
+.input_search{
+    width: 250px;
+    height: 30px;
+    border: 2px solid #E5E5E5;
+    /*border-radius:5px;*/
+    /*border: 1px solid #999999;*/
+    /*box-shadow: 1px 1px 3px #cccccc;*/
+   /* padding-left: 10px;
+    margin-left: 30px;*/
+    margin-top: 20px;
+    font-size: 18px;
+    /*background-color: #F9F9F9;*/
+}
+.body_c{
+    width: auto;
+    height: 400px;
+    /*background: url("../images/zhuangxiu1.jpg") no-repeat;*/
+}
+.container{
+    width: 1000px;
+    height: 398px;
+    margin: 0px auto;
+    background-color: #212121;
+}
+.container img{
+    width: 997px;
+    height: 396px;
+}
+.bottom{
+    width: auto;
+    height: 150px;
+    margin-top: 15px;
+    /*background-color: #9A9A9A;*/
+}
+.inner_m{
+    width: 1000px;
+    height: 148px;
+    margin: 0px auto;
+    /*background-color: #212121;*/
+}
+.bot{
+    width: 200px;
+    height:145px ;
+    margin-left: 40px;
+    border: 1px solid black;
+    /*background-color: #252947;*/
+    float: left;
+}

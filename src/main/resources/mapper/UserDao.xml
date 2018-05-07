@@ -46,6 +46,13 @@
       update fuser set nickname=#{nickname},photouri=#{photouri},year=#{year},city=#{city},gender=#{gender} where userid=#{userid}
    </update>
 
+   <select id="selectAllquser" resultType="com.hhit.model.User">
+      select * from user
+   </select>
+
+   <select id="selectAllfuser" resultType="com.hhit.model.User">
+      select * from fuser
+   </select>
    <!--这个是服务器端管理员登陆使用-->
     <!--
        <select id="selectLogin" resultType="com.hhit.model.User" parameterType="String">
