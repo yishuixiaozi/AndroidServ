@@ -47,4 +47,9 @@ public class JobServiceimpl implements JobService{
     public List<Job> selectAlljob() {
         return jobDao.selectAlljob();
     }
+
+    @Override
+    public void addJobBean(Job job) {
+        jobDao.addJobBean(job);
+    }
 }

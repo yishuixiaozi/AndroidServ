@@ -34,4 +34,10 @@
     <select id="selectAlljob" resultType="com.hhit.model.Job">
         select * from jobhome
     </select>
+
+    <insert id="addJobBean" parameterType="com.hhit.model.Job">
+        INSERT into jobhome(username,phonenum,userid,title,paymoney,payway,worktime,beigintime,peoplenun,bftime,workplace,workdescribe,jobtype,gender)
+        VALUES (#{username},#{phonenum},#{userid},#{title},#{paymoney},#{payway},#{worktime},#{beigintime},#{peoplenun},#{bftime},#{workplace},
+        #{workdescribe},#{jobtype},#{gender})
+    </insert>
 </mapper>

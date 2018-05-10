@@ -17,4 +17,6 @@ public interface JobDao {
                            @Param("pagenum") int pagenum);//尝试注解获取关键字查询
 
     List<Job> selectAlljob();
+
+    void addJobBean(Job job);
 }

@@ -66,6 +66,13 @@ public class JobServlet {
         ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
     }
 
+    @RequestMapping("/addJobBean")
+    public void addJobBean(HttpServletResponse response, HttpServletRequest request,@RequestBody Job job1){
+        System.out.println("服务器职位添加");
+        jobService.addJobBean(job1);
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson("success"));
+    }
+
     /**
      * 测试内容
      * @param request

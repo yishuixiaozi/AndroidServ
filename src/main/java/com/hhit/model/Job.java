@@ -12,7 +12,7 @@ public class Job implements Serializable{
     private String jobimageuri;
     private String beigintime;
     private int viewtimes;
-    private int peoplenum;
+    private int peoplenun;
     private String bftime;
     private String workplace;
     private String workdescribe;
@@ -21,6 +21,33 @@ public class Job implements Serializable{
     private String gender;
     private String querytype;
     private String queryfield;
+
+    private String username;
+    private String phonenum;
+
+    public int getPeoplenun() {
+        return peoplenun;
+    }
+
+    public void setPeoplenun(int peoplenun) {
+        this.peoplenun = peoplenun;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPhonenum() {
+        return phonenum;
+    }
+
+    public void setPhonenum(String phonenum) {
+        this.phonenum = phonenum;
+    }
 
     public String getQueryfield() {
         return queryfield;
@@ -124,14 +151,6 @@ public class Job implements Serializable{
 
     public void setViewtimes(int viewtimes) {
         this.viewtimes = viewtimes;
-    }
-
-    public int getPeoplenum() {
-        return peoplenum;
-    }
-
-    public void setPeoplenum(int peoplenum) {
-        this.peoplenum = peoplenum;
     }
 
     public String getBftime() {
