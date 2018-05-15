@@ -52,4 +52,9 @@ public class JobServiceimpl implements JobService{
     public void addJobBean(Job job) {
         jobDao.addJobBean(job);
     }
+
+    @Override
+    public List<Job> queryMypost(String userid) {
+        return jobDao.queryMypost(userid);
+    }
 }

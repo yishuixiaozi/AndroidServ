@@ -21,4 +21,5 @@
     <select id="signupquery" resultType="com.hhit.model.SignupBean">
         select * from signup
     </select>
+
 </mapper>

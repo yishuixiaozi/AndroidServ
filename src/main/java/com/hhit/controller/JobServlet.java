@@ -115,5 +115,15 @@ public class JobServlet {
         return "jobquery";
     }
 
+    @RequestMapping("/queryMypost")
+    public void queryMypost(HttpServletRequest request,HttpServletResponse response){
+        System.out.println("获取我的发布兼职信息");
+        String userid=request.getParameter("userid");
+        jobList=jobService.queryMypost(userid);
+        listObject.setItems(jobList);
+        listObject.setCode(StatusCode.CODE_SUCCESS);
+        listObject.setMsg("获取用户发布成功");
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
+    }
 
 }

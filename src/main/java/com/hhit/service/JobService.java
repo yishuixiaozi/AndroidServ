@@ -14,4 +14,5 @@ public interface JobService {
     List<Job> getJobBylike(String queryfield,int pagenum);
     List<Job> selectAlljob();
     void addJobBean(Job job);
+    List<Job> queryMypost(String userid);
 }

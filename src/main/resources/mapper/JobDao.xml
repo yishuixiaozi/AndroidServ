@@ -9,6 +9,10 @@
     <select id="getJobById" resultType="com.hhit.model.Job" parameterType="Int">
         select * from jobhome where id=#{id}
     </select>
+    <!--通过用户ID获取该用户发布的兼职信息-->
+    <select id="queryMypost" resultType="com.hhit.model.Job" parameterType="String">
+        SELECT * from jobhome where userid=#{userid}
+    </select>
     <!--通过多重组合查询-->
     <select id="getJobByKind" resultType="com.hhit.model.Job" parameterType="com.hhit.model.Job">
         select * from jobhome where (jobtype=#{job.jobtype} OR #{job.jobtype} is NULL ) and (payway=#{job.payway} OR  #{job.payway} is NULL )

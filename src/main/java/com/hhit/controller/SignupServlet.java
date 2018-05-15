@@ -64,7 +64,11 @@ public class SignupServlet {
         listObject.setItems(signupBeanList);
         ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
     }
+    @RequestMapping("/queryMypost")
+    public void getMypost(HttpServletRequest request,HttpServletResponse response){
+        String userid=request.getParameter("userid");
 
+    }
     @RequestMapping("/deleteSignup")
     public void deleteSignup(HttpServletRequest request,HttpServletResponse response){
         int signupid= Integer.parseInt(request.getParameter("signupid"));

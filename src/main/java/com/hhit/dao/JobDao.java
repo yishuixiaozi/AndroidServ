@@ -19,4 +19,6 @@ public interface JobDao {
     List<Job> selectAlljob();
 
     void addJobBean(Job job);
+
+    List<Job> queryMypost(String userid);
 }
