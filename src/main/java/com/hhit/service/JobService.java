@@ -15,4 +15,9 @@ public interface JobService {
     List<Job> selectAlljob();
     void addJobBean(Job job);
     List<Job> queryMypost(String userid);
+    void deleteByid(int id);
+    List<Job> selectJobstate();
+    Job selectJobdetail(int id);
+    void updatenosure(Job job);
+    void updateoksure(int id);
 }

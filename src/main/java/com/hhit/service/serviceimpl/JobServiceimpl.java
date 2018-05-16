@@ -57,4 +57,29 @@ public class JobServiceimpl implements JobService{
     public List<Job> queryMypost(String userid) {
         return jobDao.queryMypost(userid);
     }
+
+    @Override
+    public void deleteByid(int id) {
+        jobDao.deleteByid(id);
+    }
+
+    @Override
+    public List<Job> selectJobstate() {
+        return jobDao.selectJobstate();
+    }
+
+    @Override
+    public Job selectJobdetail(int id) {
+        return jobDao.selectJobdetail(id);
+    }
+
+    @Override
+    public void updatenosure(Job job) {
+        jobDao.updatenosure(job);
+    }
+
+    @Override
+    public void updateoksure(int id) {
+        jobDao.updateoksure(id);
+    }
 }

@@ -84,8 +84,8 @@
             </a>
             <ul>
                 <li><a class="menu_a" link="JobServlet/jobquery"><i class="icon icon-caret-right"></i>兼职信息查询</a></li>
-                <li><a class="menu_a" link="view/addjob.jsp"><i class="icon icon-caret-right"></i>添加职位</a></li>
-                <li><a class="menu_a" link="/job/jobquery.action"><i class="icon icon-caret-right"></i>查询职位</a></li>
+                <li><a class="menu_a" link="JobServlet/jobstatequery"><i class="icon icon-caret-right"></i>兼职信息审核</a></li>
+                <li><a class="menu_a" link="/job/jobquery.action"><i class="icon icon-caret-right"></i>添加职位</a></li>
             </ul>
         </li>
         <li class="submenu">

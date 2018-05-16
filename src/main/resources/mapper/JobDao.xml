@@ -39,9 +39,33 @@
         select * from jobhome
     </select>
 
+    <!--服务器端查询没有审核的兼职信息-->
+    <select id="selectJobstate" resultType="com.hhit.model.Job">
+        select * from jobhome where jobstate='未审核'
+    </select>
+
+    <!--服务器：查询单个未审核的兼职详细信息-->
+    <select id="selectJobdetail" resultType="com.hhit.model.Job" parameterType="Int">
+        select * from jobhome where id=#{jobid}
+    </select>
+
+    <!--审核不通过更新信息-->
+    <update id="updatenosure" parameterType="com.hhit.model.Job">
+        UPDATE jobhome SET jobstate='未通过',jobremark=#{jobremark} where id=#{id}
+    </update>
+
+    <!--审核通过执行方法-->
+    <update id="updateoksure" parameterType="Int">
+        UPDATE jobhome SET jobstate='已通过' where id=#{id}
+    </update>
     <insert id="addJobBean" parameterType="com.hhit.model.Job">
         INSERT into jobhome(username,phonenum,userid,title,paymoney,payway,worktime,beigintime,peoplenun,bftime,workplace,workdescribe,jobtype,gender)
         VALUES (#{username},#{phonenum},#{userid},#{title},#{paymoney},#{payway},#{worktime},#{beigintime},#{peoplenun},#{bftime},#{workplace},
         #{workdescribe},#{jobtype},#{gender})
     </insert>
+
+    <!--删除我的发布-->
+    <delete id="deleteByid" parameterType="Int">
+        delete from jobhome where id=#{id}
+    </delete>
 </mapper>

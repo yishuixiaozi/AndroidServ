@@ -19,7 +19,6 @@
     <%--<script src="https://cdn.bootcss.com/jquery.form/4.2.1/jquery.form.js"></script>--%>
 
     <script type="text/javascript">
-
         function loginpass(){
             /*alert("触发事件成功");*/
             $.ajax({
@@ -39,17 +38,14 @@
                         /*alert(msg1);*/
                         alert("用户名或密码错误");
                         $("#loginform1").resetForm();
-
                     }
                     else{
                         top.location.href = "jsp/main.jsp"
                     }
                     /*window.location.href = "view/login.jsp";这个跳转后还是子页面*/
                     /*top.loaction.href的跳转是跳出子页面成为最外层页面*/
-
                 }
             });
-
         }
     </script>
 </head>

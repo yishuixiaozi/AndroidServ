@@ -21,4 +21,13 @@ public interface JobDao {
     void addJobBean(Job job);
 
     List<Job> queryMypost(String userid);
+
+    void deleteByid(int id);
+
+    List<Job> selectJobstate();
+
+    Job selectJobdetail(int jobid);
+
+    void updatenosure(Job job);
+    void updateoksure(int id);
 }

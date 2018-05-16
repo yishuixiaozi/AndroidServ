@@ -48,7 +48,6 @@
                             <table class="table table-bordered data-table">
                                 <thead>
                                 <tr>
-                                    <th><input name="selectname" type="checkbox" value=""/></th>
                                     <th>兼职</th>
                                     <th>薪资</th>
                                     <th>结算方式</th>
@@ -56,14 +55,13 @@
                                     <th>工作地点</th>
                                     <th>兼职类型</th>
                                     <th>性别要求</th>
-                                    <th>审核结果</th>
+                                    <th>审核状态</th>
                                     <th>操作</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <c:forEach var="job" items="${joblist}">
                                     <tr class="gradeX">
-                                        <td><input name="selectname" type="checkbox" value="${job.id}"/></td>
                                         <td>${job.title}</td>
                                         <td>${job.paymoney}</td>
                                         <td>${job.payway}</td>
@@ -71,19 +69,14 @@
                                         <td>${job.workplace}</td>
                                         <td>${job.jobtype}</td>
                                         <td>${job.gender}</td>
-                                        <td>${job.jobstate}</td>
-                                        <td><a href="/user/deleteuser.action?id=${job.id}"
-                                               style="color: #0e90d2">删除</a>||
-                                            <a href="jsp/update.jsp?username=${job.id}
-                                                 &username=${job.id}&password=${job.id}
-                                                 &id=${job.id}"
-                                               style="color: #0e90d2">修改</a>
+                                        <td>${job.jobstate} </td>
+                                        <td><a href="JobServlet/jobstatedetail?id=${job.id}"
+                                               style="color: #0e90d2">详情</a>
                                         </td>
                                     </tr>
                                 </c:forEach>
                                 </tbody>
                             </table>
-                            <input type="submit" value="多选删除" style="color: #A1A1A1;border-radius: 15px;">
                         </form>
                     </div>
                 </div>

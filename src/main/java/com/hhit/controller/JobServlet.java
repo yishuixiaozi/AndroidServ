@@ -7,12 +7,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/JobServlet")
@@ -115,6 +118,37 @@ public class JobServlet {
         return "jobquery";
     }
 
+    /**
+     * 服务器端：兼职审核信息查询没有审核的信息
+     * @param modelMap
+     * @return
+     */
+    @RequestMapping("/jobstatequery")
+    public String jobstatequery(ModelMap modelMap){
+        jobList=jobService.selectJobstate();
+        modelMap.addAttribute("joblist",jobList);
+        return "jobstatequery";
+    }
+
+    /**
+     * 查询某个没有审核的兼职的详细信息
+     * @param request
+     * @param modelMap
+     * @return
+     */
+    @RequestMapping("/jobstatedetail")
+    public String jobstatesure(HttpServletRequest request,ModelMap modelMap){
+        int id= Integer.parseInt(request.getParameter("id"));
+        System.out.println("获得的兼职id是----"+id);
+        job=jobService.selectJobdetail(id);
+        modelMap.addAttribute("job",job);
+        return "jobstatedetail";
+    }
+    /**
+     * 依据某个用户userid来获取该用户发布的兼职信息
+     * @param request
+     * @param response
+     */
     @RequestMapping("/queryMypost")
     public void queryMypost(HttpServletRequest request,HttpServletResponse response){
         System.out.println("获取我的发布兼职信息");
@@ -124,6 +158,47 @@ public class JobServlet {
         listObject.setCode(StatusCode.CODE_SUCCESS);
         listObject.setMsg("获取用户发布成功");
         ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
+    }
+
+    @RequestMapping("/joboksure")
+    @ResponseBody
+    public Map<String,Object> joboksure(HttpServletRequest request, HttpServletResponse response){
+        Map<String,Object> map=new HashMap<String, Object>();
+        int jobid= Integer.parseInt(request.getParameter("jobid"));
+        jobService.updateoksure(jobid);
+        map.put("msg","success");
+        return map;
+    }
+
+    /**
+     * 这里是审核不通过执行方法
+     * @param request
+     * @param response
+     * @return
+     */
+    @RequestMapping("/jobnosure")
+    @ResponseBody
+    public Map<String,Object> jobnosure(HttpServletRequest request, HttpServletResponse response){
+        Map<String,Object> map=new HashMap<String, Object>();
+        String sureresult=request.getParameter("sureresult");
+        int jobid= Integer.parseInt(request.getParameter("jobid"));
+        System.out.println("结果测试-----------"+sureresult+jobid);
+        job.setId(jobid);
+        job.setJobremark(sureresult);
+        jobService.updatenosure(job);
+        map.put("msg","success");
+        return map;
+    }
+    /**
+     * 依据兼职信息id来删除某个用户的发布的兼职信息
+     * @param request
+     * @param response
+     */
+    @RequestMapping("/deleteByid")
+    public void deleteByid(HttpServletRequest request,HttpServletResponse response){
+        int id= Integer.parseInt(request.getParameter("jobid"));
+        jobService.deleteByid(id);
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson("success"));
     }
 
 }
