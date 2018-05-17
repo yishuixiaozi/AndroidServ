@@ -82,4 +82,19 @@ public class JobServiceimpl implements JobService{
     public void updateoksure(int id) {
         jobDao.updateoksure(id);
     }
+
+    @Override
+    public List<Job> getJobthrough(String userid) {
+        return jobDao.getJobthrough(userid);
+    }
+
+    @Override
+    public List<Job> getJobnothrough(String userid) {
+        return jobDao.getJobnothrough(userid);
+    }
+
+    @Override
+    public List<Job> getJobnoreview(String userid) {
+        return jobDao.getJobnoreview(userid);
+    }
 }

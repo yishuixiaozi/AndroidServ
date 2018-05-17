@@ -20,4 +20,7 @@ public interface JobService {
     Job selectJobdetail(int id);
     void updatenosure(Job job);
     void updateoksure(int id);
+    List<Job> getJobthrough(String userid);
+    List<Job> getJobnothrough(String userid);
+    List<Job> getJobnoreview(String userid);
 }

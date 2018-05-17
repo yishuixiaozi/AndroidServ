@@ -201,4 +201,33 @@ public class JobServlet {
         ResponseUtils.renderJson(response,JackJsonUtils.toJson("success"));
     }
 
+    @RequestMapping("/getJobthrough")
+    public void getJobthrough(HttpServletRequest request,HttpServletResponse response){
+        String userid=request.getParameter("userid");
+        jobList=jobService.getJobthrough(userid);
+        listObject.setItems(jobList);
+        listObject.setCode(StatusCode.CODE_SUCCESS);
+        listObject.setMsg("审核通过获取成功");
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
+    }
+
+    @RequestMapping("/getJobnothrough")
+    public void getJobnothrough(HttpServletResponse response,HttpServletRequest request){
+        String userid=request.getParameter("userid");
+        jobList=jobService.getJobnothrough(userid);
+        listObject.setItems(jobList);
+        listObject.setCode(StatusCode.CODE_SUCCESS);
+        listObject.setMsg("未通过");
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
+    }
+
+    @RequestMapping("/getJobnoreview")
+    public void getJobnoreview(HttpServletRequest request,HttpServletResponse response){
+        String userid=request.getParameter("userid");
+        jobList=jobService.getJobnoreview(userid);
+        listObject.setItems(jobList);
+        listObject.setCode(StatusCode.CODE_SUCCESS);
+        listObject.setMsg("未审核");
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
+    }
 }

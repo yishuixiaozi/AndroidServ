@@ -34,6 +34,18 @@
         select * from jobhome where title like CONCAT('%',#{queryfield},'%')
     </select>
 
+    <!--客户端获取审核通过兼职信息-->
+    <select id="getJobthrough" resultType="com.hhit.model.Job" parameterType="String">
+        select * from jobhome where userid=#{userid} and jobstate='已通过'
+    </select>
+
+    <select id="getJobnothrough" resultType="com.hhit.model.Job" parameterType="String">
+        select * from jobhome where userid=#{userid} and jobstate='未通过'
+    </select>
+
+    <select id="getJobnoreview" resultType="com.hhit.model.Job" parameterType="String">
+        select * from jobhome where userid=#{userid} and jobstate='未审核'
+    </select>
     <!--服务器端查询所有兼职-->
     <select id="selectAlljob" resultType="com.hhit.model.Job">
         select * from jobhome
