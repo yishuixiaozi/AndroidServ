@@ -33,4 +33,17 @@ public class JobneedServlet {
         listObject.setMsg("数据获取成功");
         ResponseUtils.renderJson(response, JackJsonUtils.toJson(listObject));
     }
+
+    @RequestMapping("/getJoblike")
+    public void getJoblike(HttpServletResponse response, HttpServletRequest request){
+        int pagenum= Integer.parseInt(request.getParameter("pagenum"));
+        String queryfield=request.getParameter("queryfield");
+        System.out.println("====="+pagenum+queryfield);
+        jobneedBeanList=jobneedService.getJoblike(queryfield,pagenum);
+        listObject.setItems(jobneedBeanList);
+        listObject.setCode(StatusCode.CODE_SUCCESS);
+        listObject.setMsg("success");
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
+
+    }
 }

@@ -17,4 +17,9 @@ public class JobneedServiceimpl implements JobneedService{
     public List<JobneedBean> getJobneedByPage(int pagenum) {
         return jobneedDao.getJobneedByPage(pagenum);
     }
+
+    @Override
+    public List<JobneedBean> getJoblike(String queryfield, int pagenum) {
+        return jobneedDao.getJoblike(queryfield,pagenum);
+    }
 }

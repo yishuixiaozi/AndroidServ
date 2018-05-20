@@ -4,4 +4,9 @@
     <select id="getJobneedByPage" resultType="com.hhit.model.JobneedBean" parameterType="Int">
         select * from jobneed limit #{pagenum},8
     </select>
+
+    <!--人才发现关键字查询-->
+    <select id="getJoblike" resultType="com.hhit.model.JobneedBean">
+        select * from jobneed where jobneedtitle like CONCAT('%',#{queryfield},'%') limit #{pagenum},8
+    </select>
 </mapper>
