@@ -36,4 +36,9 @@ public class SignupServiceimpl implements SignupService{
     public List<SignupBean> signupquery() {
         return signupDao.signupquery();
     }
+
+    @Override
+    public List<SignupBean> getMypostsign(int jobid) {
+        return signupDao.getMypostsign(jobid);
+    }
 }

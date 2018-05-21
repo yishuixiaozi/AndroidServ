@@ -12,5 +12,5 @@ public interface SignupDao {
     List<SignupBean> getAllSignup(String userid);
     void deleteSignup(int signupid);
     List<SignupBean> signupquery();
-
+    List<SignupBean> getMypostsign(int jobid);
 }

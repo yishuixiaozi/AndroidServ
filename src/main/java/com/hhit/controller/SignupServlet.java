@@ -81,4 +81,20 @@ public class SignupServlet {
         modelMap.addAttribute("signuplist",signupBeanList);
         return "signupquery";
     }
+
+    /**
+     * 某用户某兼职的报名单
+     * @param request
+     * @param response
+     */
+    @RequestMapping("/getMypostsign")
+    public void getMypostsign(HttpServletRequest request,HttpServletResponse response){
+        int jobid= Integer.parseInt(request.getParameter("jobid"));
+        signupBeanList=signupService.getMypostsign(jobid);
+        listObject.setItems(signupBeanList);
+        listObject.setCode(StatusCode.CODE_SUCCESS);
+        listObject.setMsg("success");
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
+
+    }
 }

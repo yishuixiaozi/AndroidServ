@@ -11,7 +11,7 @@
     </select>
     <!--通过用户ID获取该用户发布的兼职信息-->
     <select id="queryMypost" resultType="com.hhit.model.Job" parameterType="String">
-        SELECT * from jobhome where userid=#{userid}
+        SELECT * from jobhome where userid=#{userid} and jobstate='已通过'
     </select>
     <!--通过多重组合查询-->
     <select id="getJobByKind" resultType="com.hhit.model.Job" parameterType="com.hhit.model.Job">

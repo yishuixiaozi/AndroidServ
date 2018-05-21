@@ -22,4 +22,9 @@
         select * from signup
     </select>
 
+    <!--用于查询某用户某条兼职信息的报名人名单userid-->
+    <select id="getMypostsign" resultType="com.hhit.model.SignupBean" parameterType="Int">
+        SELECT * from signup where jobid=#{jobid}
+    </select>
+
 </mapper>
