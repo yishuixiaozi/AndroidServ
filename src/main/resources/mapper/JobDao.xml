@@ -80,4 +80,8 @@
     <delete id="deleteByid" parameterType="Int">
         delete from jobhome where id=#{id}
     </delete>
+
+    <select id="getJobhomelike" resultType="com.hhit.model.Job">
+        select * from jobhome where title like CONCAT('%',#{queryfield},'%') limit #{pagenum},8
+    </select>
 </mapper>

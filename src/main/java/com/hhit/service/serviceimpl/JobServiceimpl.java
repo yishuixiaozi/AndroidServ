@@ -97,4 +97,9 @@ public class JobServiceimpl implements JobService{
     public List<Job> getJobnoreview(String userid) {
         return jobDao.getJobnoreview(userid);
     }
+
+    @Override
+    public List<Job> getJobhomelike(String queryfield, int pagenum) {
+        return jobDao.getJobhomelike(queryfield,pagenum);
+    }
 }

@@ -42,7 +42,7 @@
       #{username},#{password},#{photouri},#{year},#{city},#{gender})
    </insert>
 
-   <update id="updateUSer2" parameterType="com.hhit.model.User">
+   <update id="updateUer2" parameterType="com.hhit.model.User">
       update fuser set nickname=#{nickname},photouri=#{photouri},year=#{year},city=#{city},gender=#{gender} where userid=#{userid}
    </update>
 

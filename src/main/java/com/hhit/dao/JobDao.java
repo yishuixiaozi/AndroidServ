@@ -16,6 +16,9 @@ public interface JobDao {
     List<Job> getJobBylike(@Param("queryfield") String queryfield,
                            @Param("pagenum") int pagenum);//尝试注解获取关键字查询
 
+    List<Job> getJobhomelike(@Param("queryfield") String queryfield,
+                             @Param("pagenum") int pagenum);
+
     List<Job> selectAlljob();
 
     void addJobBean(Job job);

@@ -23,4 +23,5 @@ public interface JobService {
     List<Job> getJobthrough(String userid);
     List<Job> getJobnothrough(String userid);
     List<Job> getJobnoreview(String userid);
+    List<Job> getJobhomelike(String queryfield,int pagenum);
 }

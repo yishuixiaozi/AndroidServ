@@ -230,4 +230,15 @@ public class JobServlet {
         listObject.setMsg("未审核");
         ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
     }
+
+    @RequestMapping("/getJobhomelike")
+    public void getJobhomelike(HttpServletRequest request,HttpServletResponse response){
+        String queryfield=request.getParameter("queryfield");
+        int pagenum= Integer.parseInt(request.getParameter("pagenum"));
+        jobList=jobService.getJobhomelike(queryfield,pagenum);
+        listObject.setItems(jobList);
+        listObject.setCode(StatusCode.CODE_SUCCESS);
+        listObject.setMsg("success");
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
+    }
 }
