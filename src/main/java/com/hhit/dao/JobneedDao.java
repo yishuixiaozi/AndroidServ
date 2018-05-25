@@ -10,4 +10,7 @@ public interface JobneedDao {
 
     List<JobneedBean> getJoblike(@Param("queryfield") String queryfield,
                                  @Param("pagenum") int pagenum);
+    void postJobneed(JobneedBean jobneedBean);
+    List<JobneedBean> querymypost(int userid);
+    void deletemypost(int jobneedid);
 }

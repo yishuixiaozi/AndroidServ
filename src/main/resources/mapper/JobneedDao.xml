@@ -9,4 +9,18 @@
     <select id="getJoblike" resultType="com.hhit.model.JobneedBean">
         select * from jobneed where jobneedtitle like CONCAT('%',#{queryfield},'%') limit #{pagenum},8
     </select>
+
+    <!--我的求职发布插入操作-->
+    <insert id="postJobneed" parameterType="com.hhit.model.JobneedBean">
+        insert into jobneed(jobneedtitle,jobneedcontent,userid,username,phonum,jobneedtype,worktime,bftime,myadvantage)
+        VALUES (#{jobneedtitle},#{jobneedcontent},#{userid},#{username},#{phonum},#{jobneedtype},#{worktime},#{bftime},#{myadvantage})
+    </insert>
+    <!--我的求职发布查询操作-->
+    <select id="querymypost" parameterType="Int" resultType="com.hhit.model.JobneedBean">
+        SELECT * from jobneed where userid=#{userid}
+    </select>
+    <!--我的求职发布删除操作-->
+    <delete id="deletemypost" parameterType="Int">
+        DELETE from jobneed where jobneedid=#{jobneedid}
+    </delete>
 </mapper>

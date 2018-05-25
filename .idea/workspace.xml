@@ -8,12 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b607febe-3479-47f0-8987-135eedef4ce4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AndroidServ/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobDao.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobService.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/UserDao.xml" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/UserDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobneedServlet.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobneedServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobneedDao.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobneedDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobneedService.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobneedService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobneedServiceimpl.java" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobneedServiceimpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobneedDao.xml" afterPath="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobneedDao.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/../AndroidServ/out/" />
     <ignored path="$PROJECT_DIR$/../AndroidServ/target/" />
@@ -26,122 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="JobServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="241" column="73" lean-forward="false" selection-start-line="241" selection-start-column="73" selection-end-line="241" selection-end-column="73" />
-              <folding>
-                <element signature="docComment;method#getJobByPage#0;class#JobServlet#0" expanded="false" />
-                <element signature="method#getJobByPage#0;class#JobServlet#0" expanded="false" />
-                <element signature="method#getJobByType#0;class#JobServlet#0" expanded="false" />
-                <element signature="method#getJobByTypeTest#0;class#JobServlet#0" expanded="false" />
-                <element signature="method#getJobById#0;class#JobServlet#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/UserServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-252">
-              <caret line="98" column="107" lean-forward="true" selection-start-line="98" selection-start-column="107" selection-end-line="98" selection-end-column="107" />
-              <folding>
-                <element signature="method#getUserById#0;class#UserServlet#0" expanded="false" />
-                <element signature="method#getUser#0;class#UserServlet#0" expanded="false" />
-                <element signature="method#getUser2#0;class#UserServlet#0" expanded="false" />
-                <element signature="docComment;method#UIUser2ById#0;class#UserServlet#0" expanded="false" />
-                <element signature="method#UIUser2ById#0;class#UserServlet#0" expanded="false" />
-                <element signature="docComment;method#UserRegister#0;class#UserServlet#0" expanded="false" />
-                <element signature="method#UserRegister#0;class#UserServlet#0" expanded="false" />
-                <element signature="method#test#0;class#UserServlet#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDao.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/UserDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding>
-                <marker date="1527166792671" expanded="true" signature="320:366" ph="select * fro... fuser" />
-                <marker date="1527166792671" expanded="true" signature="497:534" ph="select * fro... user" />
-                <marker date="1527166792671" expanded="true" signature="678:719" ph="select * fro... user" />
-                <marker date="1527166792671" expanded="true" signature="844:886" ph="select * fro... fuser" />
-                <marker date="1527166792671" expanded="true" signature="1027:1097" ph="select * fro... user" />
-                <marker date="1527166792671" expanded="true" signature="1236:1307" ph="select * fro... fuser" />
-                <marker date="1527166792671" expanded="true" signature="1431:1609" ph="insert into user... " />
-                <marker date="1527166792671" expanded="true" signature="1719:1842" ph="update user " />
-                <marker date="1527166792671" expanded="true" signature="1946:2125" ph="insert into fuser... " />
-                <marker date="1527166792671" expanded="true" signature="2210:2334" ph="update fuser... " />
-                <marker date="1527166792671" expanded="true" signature="2420:2438" ph="select * fro... user" />
-                <marker date="1527166792671" expanded="true" signature="2524:2543" ph="select * fro... fuser" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JobneedDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobneedDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-              <folding>
-                <marker date="1526783825934" expanded="true" signature="295:335" ph="select * fro... jobneed" />
-                <marker date="1526783825934" expanded="true" signature="449:543" ph="select * fro... jobneed" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JobDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="84" column="41" lean-forward="false" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
-              <folding>
-                <marker date="1527143359602" expanded="true" signature="302:342" ph="select * fro... jobhome" />
-                <marker date="1527143359602" expanded="true" signature="475:511" ph="select * fro... jobhome" />
-                <marker date="1527143359602" expanded="true" signature="649:693" ph="SELECT * fro... jobhome" />
-                <marker date="1527143359602" expanded="true" signature="649:712" ph="SELECT * fro... jobhome" />
-                <marker date="1527143359602" expanded="true" signature="853:1070" ph="select * fro... jobhome" />
-                <marker date="1527143359602" expanded="true" signature="1322:1680" ph="select * fro... jobhome" />
-                <marker date="1527143359602" expanded="true" signature="1767:1854" ph="select * fro... jobhome" />
-                <marker date="1527143359602" expanded="true" signature="1980:2048" ph="select * fro... jobhome" />
-                <marker date="1527143359602" expanded="true" signature="2184:2247" ph="select * fro... jobhome" />
-                <marker date="1527143359602" expanded="true" signature="2360:2423" ph="select * fro... jobhome" />
-                <marker date="1527143359602" expanded="true" signature="2535:2598" ph="select * fro... jobhome" />
-                <marker date="1527143359602" expanded="true" signature="2706:2727" ph="select * fro... jobhome" />
-                <marker date="1527143359602" expanded="true" signature="2843:2885" ph="select * fro... jobhome" />
-                <marker date="1527143359602" expanded="true" signature="3025:3064" ph="select * fro... jobhome" />
-                <marker date="1527143359602" expanded="true" signature="3175:3246" ph="UPDATE jobho... " />
-                <marker date="1527143359602" expanded="true" signature="3341:3389" ph="UPDATE jobho... " />
-                <marker date="1527143359602" expanded="true" signature="3476:3808" ph="INSERT into jobhome... " />
-                <marker date="1527143359602" expanded="true" signature="3899:3933" ph="delete from " />
-                <marker date="1527143359602" expanded="true" signature="4022:4109" ph="select * fro... jobhome" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="JobneedDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobneedDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="11" column="62" lean-forward="false" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+            <state relative-caret-position="435">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,31 +37,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobDao.java">
+      <file leaf-file-name="JobneedService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobneedService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="19" column="58" lean-forward="false" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+            <state relative-caret-position="319">
+              <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobService.java">
+      <file leaf-file-name="JobneedServiceimpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobneedServiceimpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+              <folding>
+                <element signature="e#742#743#0" expanded="true" />
+                <element signature="e#793#794#0" expanded="true" />
+                <element signature="e#863#864#0" expanded="true" />
+                <element signature="e#916#917#0" expanded="true" />
+                <element signature="e#977#978#0" expanded="true" />
+                <element signature="e#1027#1028#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobneedServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobneedServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="638">
-              <caret line="25" column="58" lean-forward="false" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JobServiceimpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1798">
-              <caret line="102" column="55" lean-forward="false" selection-start-line="102" selection-start-column="55" selection-end-line="102" selection-end-column="55" />
+              <caret line="86" column="71" lean-forward="false" selection-start-line="86" selection-start-column="71" selection-end-line="86" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -236,11 +131,6 @@
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/webapp/jsp/jobquery.jsp" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/webapp/jsp/jobstatedetail.jsp" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/model/JobneedBean.java" />
-        <option value="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobneedDao.xml" />
-        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobneedDao.java" />
-        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobneedService.java" />
-        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobneedServiceimpl.java" />
-        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobneedServlet.java" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/SignupDao.xml" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/SignupDao.java" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/SignupService.java" />
@@ -252,6 +142,11 @@
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobServiceimpl.java" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java" />
         <option value="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/UserDao.xml" />
+        <option value="$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobneedDao.xml" />
+        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobneedDao.java" />
+        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobneedService.java" />
+        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobneedServiceimpl.java" />
+        <option value="$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobneedServlet.java" />
       </list>
     </option>
   </component>
@@ -289,8 +184,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="96" />
-    <option name="y" value="14" />
+    <option name="x" value="26" />
+    <option name="y" value="24" />
     <option name="width" value="1906" />
     <option name="height" value="923" />
   </component>
@@ -310,6 +205,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -317,13 +213,23 @@
               <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidServ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidServ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -570,7 +476,8 @@
       <workItem from="1526783255620" duration="2559000" />
       <workItem from="1526894475161" duration="2512000" />
       <workItem from="1527142724003" duration="957000" />
-      <workItem from="1527166400492" duration="476000" />
+      <workItem from="1527166400492" duration="533000" />
+      <workItem from="1527234216606" duration="2864000" />
     </task>
     <task id="LOCAL-00001" summary="1 多重组合和模糊查询初稿设计完毕">
       <created>1524654080876</created>
@@ -698,14 +605,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526897986022</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="2018/5/24 服务器端整合客户端登陆界面完善成功">
+      <created>1527166920109</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1527166920110</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115080000" />
+    <option name="totallyTimeSpent" value="118001000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="96" y="14" width="1906" height="923" extended-state="0" />
+    <frame x="26" y="24" width="1906" height="923" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -726,11 +640,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24199744" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1702945" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15519068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16631356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -768,7 +682,8 @@
     <MESSAGE value="2018/5/18 服务器端查询求职者发布的求职报告完成" />
     <MESSAGE value="2018/5/20 服务器端人才关键字查询完成" />
     <MESSAGE value="2018/5/21 服务器端我的发布的报名查询完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="2018/5/21 服务器端我的发布的报名查询完成" />
+    <MESSAGE value="2018/5/24 服务器端整合客户端登陆界面完善成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018/5/24 服务器端整合客户端登陆界面完善成功" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -823,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1595">
           <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1010,30 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobneedService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="10" column="62" lean-forward="false" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobneedServiceimpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobneedServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/SignupDao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
@@ -1059,12 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="696">
           <caret line="41" column="44" lean-forward="false" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-          <folding>
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1076,40 +960,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobneedDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding>
-            <marker date="1526783825934" expanded="true" signature="295:335" ph="select * fro... jobneed" />
-            <marker date="1526783825934" expanded="true" signature="449:543" ph="select * fro... jobneed" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobneedDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="11" column="62" lean-forward="false" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="19" column="58" lean-forward="false" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="25" column="58" lean-forward="false" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1117,13 +971,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1798">
           <caret line="102" column="55" lean-forward="false" selection-start-line="102" selection-start-column="55" selection-end-line="102" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
+        <state relative-caret-position="5133">
           <caret line="241" column="73" lean-forward="false" selection-start-line="241" selection-start-column="73" selection-end-line="241" selection-end-column="73" />
           <folding>
             <element signature="docComment;method#getJobByPage#0;class#JobServlet#0" expanded="false" />
@@ -1135,10 +988,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/UserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="98" column="107" lean-forward="true" selection-start-line="98" selection-start-column="107" selection-end-line="98" selection-end-column="107" />
+        <state relative-caret-position="1276">
+          <caret line="98" column="107" lean-forward="false" selection-start-line="98" selection-start-column="107" selection-end-line="98" selection-end-column="107" />
           <folding>
             <element signature="method#getUserById#0;class#UserServlet#0" expanded="false" />
             <element signature="method#getUser#0;class#UserServlet#0" expanded="false" />
@@ -1149,6 +1009,13 @@
             <element signature="method#UserRegister#0;class#UserServlet#0" expanded="false" />
             <element signature="method#test#0;class#UserServlet#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="19" column="58" lean-forward="false" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1188,24 +1055,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/UserDao.xml">
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/resources/mapper/JobneedDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="493">
+          <caret line="23" column="55" lean-forward="false" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
           <folding>
-            <marker date="1527166792671" expanded="true" signature="320:366" ph="select * fro... fuser" />
-            <marker date="1527166792671" expanded="true" signature="497:534" ph="select * fro... user" />
-            <marker date="1527166792671" expanded="true" signature="678:719" ph="select * fro... user" />
-            <marker date="1527166792671" expanded="true" signature="844:886" ph="select * fro... fuser" />
-            <marker date="1527166792671" expanded="true" signature="1027:1097" ph="select * fro... user" />
-            <marker date="1527166792671" expanded="true" signature="1236:1307" ph="select * fro... fuser" />
-            <marker date="1527166792671" expanded="true" signature="1431:1609" ph="insert into user... " />
-            <marker date="1527166792671" expanded="true" signature="1719:1842" ph="update user " />
-            <marker date="1527166792671" expanded="true" signature="1946:2125" ph="insert into fuser... " />
-            <marker date="1527166792671" expanded="true" signature="2210:2334" ph="update fuser... " />
-            <marker date="1527166792671" expanded="true" signature="2420:2438" ph="select * fro... user" />
-            <marker date="1527166792671" expanded="true" signature="2524:2543" ph="select * fro... fuser" />
+            <marker date="1527235955102" expanded="true" signature="295:335" ph="select * fro... jobneed" />
+            <marker date="1527235955102" expanded="true" signature="449:543" ph="select * fro... jobneed" />
+            <marker date="1527235955102" expanded="true" signature="662:908" ph="insert into jobneed... " />
+            <marker date="1527235955102" expanded="true" signature="1043:1087" ph="SELECT * fro... jobneed" />
+            <marker date="1527235955102" expanded="true" signature="1183:1231" ph="DELETE from " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/dao/JobneedDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/JobneedService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/service/serviceimpl/JobneedServiceimpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+          <folding>
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AndroidServ/src/main/java/com/hhit/controller/JobneedServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="86" column="71" lean-forward="false" selection-start-line="86" selection-start-column="71" selection-end-line="86" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>

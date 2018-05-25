@@ -22,4 +22,19 @@ public class JobneedServiceimpl implements JobneedService{
     public List<JobneedBean> getJoblike(String queryfield, int pagenum) {
         return jobneedDao.getJoblike(queryfield,pagenum);
     }
+
+    @Override
+    public void postJobneed(JobneedBean jobneedBean) {
+        jobneedDao.postJobneed(jobneedBean);
+    }
+
+    @Override
+    public List<JobneedBean> querymypost(int userid) {
+        return jobneedDao.querymypost(userid);
+    }
+
+    @Override
+    public void deletemypost(int jobneedid) {
+        jobneedDao.deletemypost(jobneedid);
+    }
 }
