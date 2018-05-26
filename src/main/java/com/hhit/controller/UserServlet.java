@@ -218,5 +218,16 @@ public class UserServlet {
         return "fuserquery";
     }
 
+    @RequestMapping("/getAlluser")
+    public void getAlluser(HttpServletRequest request,HttpServletResponse response){
+        System.out.println("-----开始取值");
+        userList=userService.getAlluser();
+        System.out.println("----------"+userList.size());
+        listObject.setItems(userList);
+        listObject.setCode(StatusCode.CODE_SUCCESS);
+        listObject.setMsg("success");
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
+    }
+
 
 }

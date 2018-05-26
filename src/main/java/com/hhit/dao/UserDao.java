@@ -23,4 +23,6 @@ public interface UserDao {
 
     List<User> selectAllquser();//求职者用户查询
     List<User> selectAllfuser();//招聘者用户查询
+
+    List<User> getAlluser();
 }

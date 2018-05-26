@@ -16,7 +16,7 @@
         VALUES (#{jobneedtitle},#{jobneedcontent},#{userid},#{username},#{phonum},#{jobneedtype},#{worktime},#{bftime},#{myadvantage})
     </insert>
     <!--我的求职发布查询操作-->
-    <select id="querymypost" parameterType="Int" resultType="com.hhit.model.JobneedBean">
+    <select id="querymypost" parameterType="String" resultType="com.hhit.model.JobneedBean">
         SELECT * from jobneed where userid=#{userid}
     </select>
     <!--我的求职发布删除操作-->

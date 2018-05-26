@@ -70,4 +70,9 @@ public class UserServiceimpl implements UserService{
     public List<User> selectAllfuser() {
         return userDao.selectAllfuser();
     }
+
+    @Override
+    public List<User> getAlluser() {
+        return userDao.getAlluser();
+    }
 }

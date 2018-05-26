@@ -19,4 +19,6 @@ public interface UserService {
 
     List<User> selectAllquser();
     List<User> selectAllfuser();
+
+    List<User> getAlluser();
 }

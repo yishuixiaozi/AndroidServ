@@ -29,7 +29,7 @@ public class JobneedServiceimpl implements JobneedService{
     }
 
     @Override
-    public List<JobneedBean> querymypost(int userid) {
+    public List<JobneedBean> querymypost(String userid) {
         return jobneedDao.querymypost(userid);
     }
 

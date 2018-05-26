@@ -10,6 +10,6 @@ public interface JobneedService {
 
     List<JobneedBean> getJoblike(String queryfield,int pagenum);
     void postJobneed(JobneedBean jobneedBean);
-    List<JobneedBean> querymypost(int userid);
+    List<JobneedBean> querymypost(String userid);
     void deletemypost(int jobneedid);
 }

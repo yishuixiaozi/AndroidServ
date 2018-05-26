@@ -67,7 +67,7 @@ public class JobneedServlet {
      */
     @RequestMapping("/querymypost")
     public void querymypost(HttpServletRequest request,HttpServletResponse response){
-        int userid= Integer.parseInt(request.getParameter("userid"));
+        String userid=request.getParameter("userid");
         jobneedBeanList=jobneedService.querymypost(userid);
         listObject.setItems(jobneedBeanList);
         listObject.setCode(StatusCode.CODE_SUCCESS);

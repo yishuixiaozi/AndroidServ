@@ -53,36 +53,10 @@
    <select id="selectAllfuser" resultType="com.hhit.model.User">
       select * from fuser
    </select>
-   <!--这个是服务器端管理员登陆使用-->
-    <!--
-       <select id="selectLogin" resultType="com.hhit.model.User" parameterType="String">
-          select * from user where username=#{username}
-       </select>
 
-        <select id="selectlogin" resultType="com.hhit.model.User" parameterType="com.hhit.model.User">
-            select * from user where username=#{username} and password=#{password}
-        </select>
-
-        <update id="updatepass" parameterType="com.hhit.model.User">
-            UPDATE user set password=#{password} where username=#{username}
-        </update>
-
-        <select id="userSearchall" resultType="com.hhit.model.User" >
-            select * from user
-        </select>
-
-        <delete id="deleteuser" parameterType="Int">
-            delete from user where id=#{id}
-        </delete>
-
-        <insert id="adduser" parameterType="com.hhit.model.User">
-            insert into user(username,loginname,password) values(#{username},#{loginname},#{password})
-        </insert>
-
-        <update id="updateuser" parameterType="com.hhit.model.User">
-            update user set username=#{username},loginname=#{loginname},password=#{password}
-            where id=#{id}
-        </update>-->
+   <select id="getAlluser" resultType="com.hhit.model.User">
+      SELECT * from user
+   </select>
 
 
 </mapper>
