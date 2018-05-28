@@ -48,7 +48,6 @@
                             <table class="table table-bordered data-table">
                                 <thead>
                                 <tr>
-                                    <th><input name="selectname" type="checkbox" value=""/></th>
                                     <th>兼职</th>
                                     <th>薪资</th>
                                     <th>结算方式</th>
@@ -63,7 +62,6 @@
                                 <tbody>
                                 <c:forEach var="job" items="${joblist}">
                                     <tr class="gradeX">
-                                        <td><input name="selectname" type="checkbox" value="${job.id}"/></td>
                                         <td>${job.title}</td>
                                         <td>${job.paymoney}</td>
                                         <td>${job.payway}</td>
@@ -83,7 +81,6 @@
                                 </c:forEach>
                                 </tbody>
                             </table>
-                            <input type="submit" value="多选删除" style="color: #A1A1A1;border-radius: 15px;">
                         </form>
                     </div>
                 </div>

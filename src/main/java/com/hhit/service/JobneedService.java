@@ -14,4 +14,5 @@ public interface JobneedService {
     void deletemypost(int jobneedid);
     JobneedBean getJobneeddetail(int jobneedid);
     void updateJobneed(JobneedBean jobneedBean);
+    List<JobneedBean> jobneedquery();
 }

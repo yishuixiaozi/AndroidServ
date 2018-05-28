@@ -47,4 +47,9 @@ public class JobneedServiceimpl implements JobneedService{
     public void updateJobneed(JobneedBean jobneedBean) {
         jobneedDao.updateJobneed(jobneedBean);
     }
+
+    @Override
+    public List<JobneedBean> jobneedquery() {
+        return jobneedDao.jobneedquery();
+    }
 }

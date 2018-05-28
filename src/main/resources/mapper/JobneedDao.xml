@@ -32,4 +32,9 @@
     <select id="getJobneeddetail" resultType="com.hhit.model.JobneedBean" parameterType="Int">
         SELECT * from jobneed where jobneedid=#{jobneedid}
     </select>
+
+    <!--服务器端程序内容-->
+    <select id="jobneedquery" resultType="com.hhit.model.JobneedBean">
+        SELECT * from jobneed
+    </select>
 </mapper>

@@ -48,7 +48,6 @@
                             <table class="table table-bordered data-table">
                                 <thead>
                                 <tr>
-                                    <th><input name="selectname" type="checkbox" value=""/></th>
                                     <th>用户名</th>
                                     <th>昵称</th>
                                     <th>密码</th>
@@ -60,7 +59,6 @@
                                 <tbody>
                                 <c:forEach var="user" items="${userlist}">
                                     <tr class="gradeX">
-                                        <td><input name="selectname" type="checkbox" value="${user.id}"/></td>
                                         <td>${user.username}</td>
                                         <td>${user.nickname}</td>
                                         <td>${user.password}</td>
@@ -77,7 +75,6 @@
                                 </c:forEach>
                                 </tbody>
                             </table>
-                            <input type="submit" value="多选删除" style="color: #A1A1A1;border-radius: 15px;">
                         </form>
                     </div>
                 </div>

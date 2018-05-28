@@ -4,6 +4,7 @@ import com.hhit.model.JobneedBean;
 import com.hhit.service.JobneedService;
 import com.hhit.utils.*;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -108,4 +109,17 @@ public class JobneedServlet {
         jobneedService.updateJobneed(jobneedBean);
         ResponseUtils.renderJson(response,JackJsonUtils.toJson("success"));
     }
+
+    /**
+     * 服务器端自身使用
+     * @param modelMap
+     * @return
+     */
+    @RequestMapping("/jobneedquery")
+    public String jobneedquery(ModelMap modelMap){
+        jobneedBeanList=jobneedService.jobneedquery();
+        modelMap.addAttribute("jobneedlist",jobneedBeanList);
+        return "jobneedquery";
+    }
+
 }

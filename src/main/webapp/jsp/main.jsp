@@ -62,8 +62,6 @@
             </a>
             <ul>
                 <li><a class="menu_a" id="yonghu"  link="UserServlet/quserquery"><i class="icon icon-caret-right"></i>求职用户查询</a></li>
-                <li><a class="menu_a" id="yonghu1" link="view/adduser.jsp"><i class="icon icon-caret-right"></i>添加用户</a></li>
-                <li><a class="menu_a" id="yonghu3" link="view/updatepassword.jsp"><i class="icon icon-caret-right"></i>个人密码修改</a></li>
             </ul>
         </li>
         <li class="submenu">
@@ -73,8 +71,6 @@
             </a>
             <ul>
                 <li><a class="menu_a" link="UserServlet/fuserquery"><i class="icon icon-caret-right"></i>招聘用户查询</a></li>
-                <li><a class="menu_a" link="view/adddept.jsp"><i class="icon icon-caret-right"></i> 新增用户查询</a></li>
-                <li><a class="menu_a" link="/dept/deptquery.action"><i class="icon icon-caret-right"></i>查询部门</a></li>
             </ul>
         </li>
         <li class="submenu">
@@ -83,9 +79,9 @@
                 <span>兼职信息管理</span>
             </a>
             <ul>
-                <li><a class="menu_a" link="JobServlet/jobquery"><i class="icon icon-caret-right"></i>兼职信息查询</a></li>
+                <li><a class="menu_a" link="JobServlet/jobquery"><i class="icon icon-caret-right"></i>招聘信息查询</a></li>
                 <li><a class="menu_a" link="JobServlet/jobstatequery"><i class="icon icon-caret-right"></i>兼职信息审核</a></li>
-                <li><a class="menu_a" link="/job/jobquery.action"><i class="icon icon-caret-right"></i>添加职位</a></li>
+                <li><a class="menu_a" link="JobneedServlet/jobneedquery"><i class="icon icon-caret-right"></i>求职信息查询</a></li>
             </ul>
         </li>
         <li class="submenu">
@@ -95,8 +91,6 @@
             </a>
             <ul>
                 <li><a class="menu_a" link="SignupServlet/signupquery"><i class="icon icon-caret-right"></i>报名信息查询</a></li>
-                <li><a class="menu_a" link="view/addemployee.jsp"><i class="icon icon-caret-right"></i>添加员工</a></li>
-                <li><a class="menu_a" link="/employee/employeequery.action"><i class="icon icon-caret-right"></i>员工查询</a></li>
             </ul>
         </li>
         <li class="submenu">
@@ -106,18 +100,16 @@
             </a>
             <ul>
                 <li><a class="menu_a" link="CollectionServlet/collectionquery"><i class="icon icon-caret-right"></i>收藏信息查询</a></li>
-                <li><a class="menu_a" link="view/addnotice.jsp"><i class="icon icon-caret-right"></i> 添加公告</a></li>
-                <li><a class="menu_a" link="/notice/noticequery.action"><i class="icon icon-caret-right"></i>公告查询</a></li>
             </ul>
         </li>
         <li class="submenu">
             <a href="#">
                 <i class="icon icon-table"></i>
-                <span>用户消息管理</span>
+                <span>数据信息管理</span>
             </a>
             <ul>
-                <li><a class="menu_a" id="yo"  link="view/uploadForm1.jsp"><i class="icon icon-caret-right"></i>上传文件</a></li>
-                <li><a class="menu_a" id="yongh" link="/doucument/documentquery.action"><i class="icon icon-caret-right"></i>查询文件</a></li>
+                <li><a class="menu_a" id="yo"  link="view/uploadForm1.jsp"><i class="icon icon-caret-right"></i>数据库备份</a></li>
+                <li><a class="menu_a" id="yongh" link="/doucument/documentquery.action"><i class="icon icon-caret-right"></i>数据库恢复</a></li>
             </ul>
         </li>
     </ul>

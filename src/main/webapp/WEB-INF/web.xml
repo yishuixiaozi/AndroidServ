@@ -53,7 +53,7 @@
 
   <!--设置服务应用打开后的跳转页面-->
   <welcome-file-list>
-    <welcome-file>jsp/main.jsp</welcome-file>
+    <welcome-file>jsp/login.jsp</welcome-file>
   </welcome-file-list>
 
 </web-app>

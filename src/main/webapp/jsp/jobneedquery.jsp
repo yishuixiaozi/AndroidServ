@@ -11,7 +11,7 @@
 <head>
     <base href="<%=basePath%>">
 
-    <title>招聘用户界面</title>
+    <title>兼职信息界面</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
@@ -41,35 +41,33 @@
             <div class="span12">
                 <div class="widget-box">
                     <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-                        <h5>招聘用户信息显示</h5>
+                        <h5>兼职信息显示</h5>
                     </div>
                     <div class="widget-content nopadding">
                         <form action="/user/deletemore.action" method="post">
                             <table class="table table-bordered data-table">
                                 <thead>
                                 <tr>
-                                    <th>用户名</th>
-                                    <th>昵称</th>
-                                    <th>密码</th>
-                                    <th>所属公司</th>
-                                    <th>城市</th>
+                                    <th>求职标题</th>
+                                    <th>其他说明</th>
+                                    <th>求职用户</th>
+                                    <th>联系电话</th>
+                                    <th>工作时间</th>
+                                    <th>每天空闲</th>
                                     <th>操作</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <c:forEach var="user" items="${userlist}">
+                                <c:forEach var="job" items="${jobneedlist}">
                                     <tr class="gradeX">
-                                        <td>${user.username}</td>
-                                        <td>${user.nickname}</td>
-                                        <td>${user.password}</td>
-                                        <td>${user.company}</td>
-                                        <td>${user.city}</td>
-                                        <td><a href="/user/deleteuser.action?id=${user.id}"
-                                               style="color: #0e90d2">删除</a>||
-                                            <a href="jsp/update.jsp?username=${user.username}
-                                                 &username=${user.username}&password=${user.password}
-                                                 &id=${user.id}"
-                                               style="color: #0e90d2">修改</a>
+                                        <td>${job.jobneedtitle}</td>
+                                        <td>${job.jobneedcontent}</td>
+                                        <td>${job.username}</td>
+                                        <td>${job.phonum}</td>
+                                        <td>${job.bftime}</td>
+                                        <td>${job.worktime}</td>
+                                        <td><a href="/user/deleteuser.action?id=${job.jobneedid}"
+                                               style="color: #0e90d2">删除</a>
                                         </td>
                                     </tr>
                                 </c:forEach>

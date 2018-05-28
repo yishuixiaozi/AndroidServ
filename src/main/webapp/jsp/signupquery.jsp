@@ -48,7 +48,6 @@
                             <table class="table table-bordered data-table">
                                 <thead>
                                 <tr>
-                                    <th><input name="selectname" type="checkbox" value=""/></th>
                                     <th>报名用户ID</th>
                                     <th>兼职内容</th>
                                     <th>报名时间</th>
@@ -61,7 +60,6 @@
                                 <tbody>
                                 <c:forEach var="singleObject" items="${signuplist}">
                                     <tr class="gradeX">
-                                        <td><input name="selectname" type="checkbox" value="${singleObject.signupid}"/></td>
                                         <td>${singleObject.userid}</td>
                                         <td>${singleObject.title}</td>
                                         <td>${singleObject.time}</td>
@@ -79,7 +77,6 @@
                                 </c:forEach>
                                 </tbody>
                             </table>
-                            <input type="submit" value="多选删除" style="color: #A1A1A1;border-radius: 15px;">
                         </form>
                     </div>
                 </div>
