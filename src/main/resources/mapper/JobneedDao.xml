@@ -15,6 +15,11 @@
         insert into jobneed(jobneedtitle,jobneedcontent,userid,username,phonum,jobneedtype,worktime,bftime,myadvantage)
         VALUES (#{jobneedtitle},#{jobneedcontent},#{userid},#{username},#{phonum},#{jobneedtype},#{worktime},#{bftime},#{myadvantage})
     </insert>
+
+    <update id="updateJobneed" parameterType="com.hhit.model.JobneedBean">
+        update jobneed set jobneedtitle=#{jobneedtitle},jobneedcontent=#{jobneedcontent},username=#{username},
+        phonum=#{phonum},worktime=#{worktime},bftime=#{bftime},myadvantage=#{myadvantage} where jobneedid=#{jobneedid}
+    </update>
     <!--我的求职发布查询操作-->
     <select id="querymypost" parameterType="String" resultType="com.hhit.model.JobneedBean">
         SELECT * from jobneed where userid=#{userid}
@@ -23,4 +28,8 @@
     <delete id="deletemypost" parameterType="Int">
         DELETE from jobneed where jobneedid=#{jobneedid}
     </delete>
+
+    <select id="getJobneeddetail" resultType="com.hhit.model.JobneedBean" parameterType="Int">
+        SELECT * from jobneed where jobneedid=#{jobneedid}
+    </select>
 </mapper>

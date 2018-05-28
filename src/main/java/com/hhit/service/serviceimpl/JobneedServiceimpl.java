@@ -37,4 +37,14 @@ public class JobneedServiceimpl implements JobneedService{
     public void deletemypost(int jobneedid) {
         jobneedDao.deletemypost(jobneedid);
     }
+
+    @Override
+    public JobneedBean getJobneeddetail(int jobneedid) {
+        return jobneedDao.getJobneeddetail(jobneedid);
+    }
+
+    @Override
+    public void updateJobneed(JobneedBean jobneedBean) {
+        jobneedDao.updateJobneed(jobneedBean);
+    }
 }

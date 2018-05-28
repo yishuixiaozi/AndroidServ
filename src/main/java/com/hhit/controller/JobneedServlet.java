@@ -8,8 +8,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -84,6 +87,25 @@ public class JobneedServlet {
     public void deletemypost(HttpServletRequest request,HttpServletResponse response){
         int jobneedid= Integer.parseInt(request.getParameter("jobneedid"));
         jobneedService.deletemypost(jobneedid);
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson("success"));
+    }
+
+    //获取我的求职发布某条详细信息
+    @RequestMapping("/getJobneeddetail")
+    public void getJobneeddetail(HttpServletRequest request,HttpServletResponse response) {
+        int jobneedid= Integer.parseInt(request.getParameter("jobneedid"));
+        jobneedBean=jobneedService.getJobneeddetail(jobneedid);
+        singleObject.setObject(jobneedBean);
+        singleObject.setCode(StatusCode.CODE_SUCCESS);
+        singleObject.setMsg("success");
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson(singleObject));
+    }
+
+    //获取我的某条求职发布信息
+    @RequestMapping("/updateJobneed")
+    public void updateJobneed(HttpServletRequest request,HttpServletResponse response,@RequestBody JobneedBean jobneedBean){
+        System.out.println("------太长的worktime---"+jobneedBean.getWorktime());
+        jobneedService.updateJobneed(jobneedBean);
         ResponseUtils.renderJson(response,JackJsonUtils.toJson("success"));
     }
 }

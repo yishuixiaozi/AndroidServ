@@ -13,4 +13,6 @@ public interface JobneedDao {
     void postJobneed(JobneedBean jobneedBean);
     List<JobneedBean> querymypost(String userid);
     void deletemypost(int jobneedid);
+    JobneedBean getJobneeddetail(int jobneedid);
+    void updateJobneed(JobneedBean jobneedBean);
 }
