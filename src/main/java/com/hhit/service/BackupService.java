@@ -7,4 +7,5 @@ import java.util.List;
 public interface BackupService {
 
     List<BackupBean> querybackup();
+    void addbackup(BackupBean backupBean);
 }

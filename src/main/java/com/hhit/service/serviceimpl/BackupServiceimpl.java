@@ -18,4 +18,9 @@ public class BackupServiceimpl implements BackupService{
     public List<BackupBean> querybackup() {
         return backupDao.querybackup();
     }
+
+    @Override
+    public void addbackup(BackupBean backupBean) {
+        backupDao.addbackup(backupBean);
+    }
 }

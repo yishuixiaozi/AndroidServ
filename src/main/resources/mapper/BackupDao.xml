@@ -4,4 +4,10 @@
     <select id="querybackup" resultType="com.hhit.model.BackupBean">
         SELECT * from back
     </select>
+
+    <!--数据库备份-->
+    <insert id="addbackup" parameterType="com.hhit.model.BackupBean">
+        INSERT into back(backupusername,backuptime,backupfilename,backupfilepath) VALUES (#{backupusername},
+        #{backuptime},#{backupfilename},#{backupfilepath})
+    </insert>
 </mapper>

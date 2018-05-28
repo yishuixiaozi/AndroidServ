@@ -4,8 +4,8 @@ public class BackupBean {
     int backupid;
     String backupusername;
     String backuptime;
-    String backfilename;
-    String backfilepath;
+    String backupfilename;
+    String backupfilepath;
 
     public int getBackupid() {
         return backupid;
@@ -31,19 +31,19 @@ public class BackupBean {
         this.backuptime = backuptime;
     }
 
-    public String getBackfilename() {
-        return backfilename;
+    public String getBackupfilename() {
+        return backupfilename;
     }
 
-    public void setBackfilename(String backfilename) {
-        this.backfilename = backfilename;
+    public void setBackupfilename(String backupfilename) {
+        this.backupfilename = backupfilename;
     }
 
-    public String getBackfilepath() {
-        return backfilepath;
+    public String getBackupfilepath() {
+        return backupfilepath;
     }
 
-    public void setBackfilepath(String backfilepath) {
-        this.backfilepath = backfilepath;
+    public void setBackupfilepath(String backupfilepath) {
+        this.backupfilepath = backupfilepath;
     }
 }
