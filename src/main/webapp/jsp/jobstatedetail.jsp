@@ -143,7 +143,6 @@
                 </div>
                 <div class="span4">
                     <a id="modal-788360" href="#modal-container-788360" role="button" class="btn" data-toggle="modal">审核通过</a>
-
                     <div id="modal-container-788360" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>

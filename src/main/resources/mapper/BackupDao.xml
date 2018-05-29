@@ -7,7 +7,7 @@
 
     <!--数据库备份-->
     <insert id="addbackup" parameterType="com.hhit.model.BackupBean">
-        INSERT into back(backupusername,backuptime,backupfilename,backupfilepath) VALUES (#{backupusername},
-        #{backuptime},#{backupfilename},#{backupfilepath})
+        INSERT into back(backupusername,backuptime,backupfilename,backupfilepath,remark) VALUES (#{backupusername},
+        #{backuptime},#{backupfilename},#{backupfilepath},#{remark})
     </insert>
 </mapper>

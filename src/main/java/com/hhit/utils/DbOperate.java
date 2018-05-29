@@ -1,4 +1,4 @@
-package com.hhit.controller;
+package com.hhit.utils;
 
 import java.io.*;
 
@@ -48,10 +48,10 @@ public class DbOperate {
         // -u后面是用户名，-p是密码-p后面最好不要有空格，-family是数据库的名字
         String path1="D:\\SoftwareInstall\\Mysql\\bin\\";
         Process process = runtime.exec(path1+"mysqldump -h " + dbHost + " -p"
-                + dbPort + " -u" +dbUser + " -p" +dbPass + " " + dbName);
+                + dbPort + " -u" +dbUser + " -p" +dbPass + "  --set-charset=UTF8  " + dbName);
         // mysqldump -hlocalhost -p3306 -uroot -p123456 androidsql
         InputStream inputStream = process.getInputStream();// 得到输入流，写成.sql文件
-        InputStreamReader reader = new InputStreamReader(inputStream);
+        InputStreamReader reader = new InputStreamReader(inputStream,"utf8");
         BufferedReader br = new BufferedReader(reader);
         String s = null;
         StringBuffer sb = new StringBuffer();
@@ -104,19 +104,20 @@ public class DbOperate {
     }
 
     public static void main(String[] args) {
-        /*try {
-            dbBackup("root", "123456", "localhost","3306", "androidsql", "F://Databeifen//back.sql");
+        try {
+            dbBackup("root", "123456", "localhost","3306", "androidsql", "F://Databeifen//52918.sql");
             System.out.println("完成！");
         } catch (Exception e) {
             e.printStackTrace();
-        }*/
-        try {
-            dbRecover("root", "123456", "localhost","3306", "androidsql", "F://Databeifen//back.sql");
+        }
+        /*try {
+            dbRecover("root", "123456", "localhost","3306", "androidsql", "F://Databeifen//2018.sql");
             System.out.println("完成！");
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-        }
+        }*/
     }
+
 
 }

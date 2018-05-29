@@ -52,6 +52,7 @@
                                     <th>备份时间</th>
                                     <th>文件名</th>
                                     <th>备份地址</th>
+                                    <th>备份说明</th>
                                     <th>操作</th>
                                 </tr>
                                 </thead>
@@ -62,20 +63,57 @@
                                         <td>${job.backuptime}</td>
                                         <td>${job.backupfilename}</td>
                                         <td>${job.backupfilepath}</td>
-                                        <td><a href="/user/deleteuser.action?id=${job.backupid}"
+                                        <td>${job.remark}</td>
+                                        <td><a href="BackupServlet/recover?backupfilename=${job.backupfilename}"
                                                style="color: #0e90d2">恢复到该备份内容</a>
                                         </td>
                                     </tr>
                                 </c:forEach>
                                 </tbody>
                             </table>
-                            <a href="BackupServlet/backup">备份最新数据</a>
+                            <%--<a href="BackupServlet/backup">备份最新数据</a>--%>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="span4">
+        <a id="modal-788360" href="#modal-container-788360" role="button" class="btn" data-toggle="modal">数据备份</a>
+        <div id="modal-container-788360" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel2">
+                    备份说明
+                </h3>
+            </div>
+
+            <div class="modal-body">
+                <p>
+                    您将备份数据库数据内容
+                </p>
+                <input placeholder="请填写备份说明" id="sureresult" type="text">
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+                <button class="btn btn-primary" onclick="yessure()">确认备份</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+        <div class="alert">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <h4>
+                提示!
+            </h4> <strong>友情提示!</strong> 建议恢复数据为最新内容
+        </div>
+    </div>
+</div>
+</div>
 </div>
 
 <script src="js/jquery.min.js"></script>
@@ -86,5 +124,34 @@
 <script src="js/jquery.dataTables.min.js"></script>
 <script src="js/matrix.js"></script>
 <script src="js/matrix.tables.js"></script>
+
+<script type="text/javascript">
+    function yessure(){
+        /*alert("触发事件成功");*/
+        $.ajax({
+            data: {remark:$("#sureresult").val()},
+            type:"post",
+            dataType:'json',
+            url:"BackupServlet/backup1",
+            error:function (data) {
+                alert("出现些问题");
+                window.location.href = "BackupServlet/querybackup"
+            },
+            success:function(data){
+                var msg1=data["msg"];
+               /* alert("数据备份完成")*/
+                if(msg1=="success")
+                {
+                    window.location.href = "BackupServlet/querybackup"
+                }
+                else{
+                    window.location.href = "BackupServlet/querybackup"
+                }
+
+            }
+        });
+    }
+</script>
 </body>
+
 </html>
