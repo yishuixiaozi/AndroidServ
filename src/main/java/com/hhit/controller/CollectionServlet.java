@@ -79,4 +79,11 @@ public class CollectionServlet {
         modelMap.addAttribute("collectionlist",collectionBeanList);
         return "collectionquery";
     }
+
+    @RequestMapping("/collectiondeleteid")
+    public String collectiondeleteid(HttpServletRequest request){
+        int id= Integer.parseInt(request.getParameter("id"));
+        collectionService.collectiondeleteid(id);
+        return "redirect:collectionquery";
+    }
 }

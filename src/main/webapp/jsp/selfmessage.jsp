@@ -21,6 +21,6 @@
 </head>
 
 <body>
-   selfmessagjsp.
+      欢迎来到大学生兼职系统！
 </body>
 </html>

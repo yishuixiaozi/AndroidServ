@@ -19,6 +19,8 @@ public interface JobDao {
     List<Job> getJobhomelike(@Param("queryfield") String queryfield,
                              @Param("pagenum") int pagenum);
 
+    void updateJobpost(Job job);
+
     List<Job> selectAlljob();
 
     void addJobBean(Job job);

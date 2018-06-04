@@ -11,4 +11,5 @@ public interface CollectionService {
     CollectionBean getCollectionTag(String userid,int jobid);
     void deleteCollection(String userid,int jobid);
     List<CollectionBean> collectionquery();
+    void collectiondeleteid(int id);
 }

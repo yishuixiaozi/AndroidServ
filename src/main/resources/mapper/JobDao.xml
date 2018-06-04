@@ -66,6 +66,12 @@
         UPDATE jobhome SET jobstate='未通过',jobremark=#{jobremark} where id=#{id}
     </update>
 
+    <!--更新求职发布内容-->
+    <update id="updateJobpost" parameterType="com.hhit.model.Job">
+        UPDATE jobhome set paymoney=#{paymoney},phonenum=#{phonenum},payway=#{payway},worktime=#{worktime},
+        beigintime=#{beigintime},peoplenun=#{peoplenun},bftime=#{bftime},workplace=#{workplace},workdescribe=#{workdescribe},
+        username=#{username},jobstate='未审核',jobremark=NULL where id=#{id}
+    </update>
     <!--审核通过执行方法-->
     <update id="updateoksure" parameterType="Int">
         UPDATE jobhome SET jobstate='已通过' where id=#{id}

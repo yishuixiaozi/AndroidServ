@@ -70,12 +70,8 @@
                                         <td>${job.jobtype}</td>
                                         <td>${job.gender}</td>
                                         <td>${job.jobstate}</td>
-                                        <td><a href="/user/deleteuser.action?id=${job.id}"
-                                               style="color: #0e90d2">删除</a>||
-                                            <a href="jsp/update.jsp?username=${job.id}
-                                                 &username=${job.id}&password=${job.id}
-                                                 &id=${job.id}"
-                                               style="color: #0e90d2">修改</a>
+                                        <td><a href="JobServlet/jobdeleteid?id=${job.id}"
+                                               style="color: #0e90d2">删除</a>
                                         </td>
                                     </tr>
                                 </c:forEach>

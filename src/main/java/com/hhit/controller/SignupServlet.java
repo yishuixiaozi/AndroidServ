@@ -97,4 +97,11 @@ public class SignupServlet {
         ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
 
     }
+
+    @RequestMapping("/signupdeleteid")
+    public String signupdeleteid(HttpServletRequest request){
+        int id= Integer.parseInt(request.getParameter("id"));
+        signupService.deleteSignup(id);
+        return "redirect:signupquery";
+    }
 }

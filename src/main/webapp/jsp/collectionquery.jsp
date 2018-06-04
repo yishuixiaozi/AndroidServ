@@ -66,12 +66,9 @@
                                         <td>${singleObject.paymoney}</td>
                                         <td>${singleObject.payway}</td>
                                         <td>${singleObject.worktime}</td>
-                                        <td><a href="/user/deleteuser.action?id=${singleObject.collectionid}"
-                                               style="color: #0e90d2">删除</a>||
-                                            <a href="jsp/update.jsp?username=${singleObject.collectionid}
-                                                 &username=${singleObject.collectionid}&password=${singleObject.collectionid}
-                                                 &id=${singleObject.collectionid}"
-                                               style="color: #0e90d2">修改</a>
+                                        <td><a href="CollectionServlet/collectiondeleteid?id=${singleObject.collectionid}"
+                                               style="color: #0e90d2">删除</a>
+
                                         </td>
                                     </tr>
                                 </c:forEach>

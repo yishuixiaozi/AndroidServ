@@ -122,4 +122,11 @@ public class JobneedServlet {
         return "jobneedquery";
     }
 
+    @RequestMapping("/jobneeddeleteid")
+    public String jobneeddeleteid(HttpServletRequest request){
+        int id= Integer.parseInt(request.getParameter("id"));
+        jobneedService.deletemypost(id);
+        return "redirect:jobneedquery";
+    }
+
 }

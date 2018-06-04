@@ -229,5 +229,19 @@ public class UserServlet {
         ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
     }
 
+    @RequestMapping("/quserdeleteid")
+    public String userdeleteid(HttpServletRequest request){
+        int id= Integer.parseInt(request.getParameter("id"));
+        userService.quserdeleteid(id);
+        return "redirect:quserquery";
+    }
+
+    @RequestMapping("/fuserdeleteid")
+    public String fuserdeleteid(HttpServletRequest request){
+        String userid=request.getParameter("userid");
+        userService.fuserdeleteid(userid);
+        return "redirect:fuserquery";
+    }
+
 
 }

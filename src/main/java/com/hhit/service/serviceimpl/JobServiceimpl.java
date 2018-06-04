@@ -102,4 +102,9 @@ public class JobServiceimpl implements JobService{
     public List<Job> getJobhomelike(String queryfield, int pagenum) {
         return jobDao.getJobhomelike(queryfield,pagenum);
     }
+
+    @Override
+    public void updateJobpost(Job job) {
+        jobDao.updateJobpost(job);
+    }
 }

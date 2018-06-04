@@ -37,4 +37,9 @@ public class CollectionServiceimpl implements CollectionService{
     public List<CollectionBean> collectionquery() {
         return collectionDao.collectionquery();
     }
+
+    @Override
+    public void collectiondeleteid(int id) {
+        collectionDao.collectiondeleteid(id);
+    }
 }

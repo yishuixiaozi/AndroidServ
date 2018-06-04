@@ -64,12 +64,8 @@
                                         <td>${user.password}</td>
                                         <td>${user.company}</td>
                                         <td>${user.city}</td>
-                                        <td><a href="/user/deleteuser.action?id=${user.id}"
-                                               style="color: #0e90d2">删除</a>||
-                                            <a href="jsp/update.jsp?username=${user.username}
-                                                 &username=${user.username}&password=${user.password}
-                                                 &id=${user.id}"
-                                               style="color: #0e90d2">修改</a>
+                                        <td><a href="UserServlet/fuserdeleteid?userid=${user.id}"
+                                               style="color: #0e90d2">删除</a>
                                         </td>
                                     </tr>
                                 </c:forEach>

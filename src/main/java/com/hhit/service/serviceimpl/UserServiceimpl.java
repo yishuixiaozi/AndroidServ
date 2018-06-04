@@ -75,4 +75,14 @@ public class UserServiceimpl implements UserService{
     public List<User> getAlluser() {
         return userDao.getAlluser();
     }
+
+    @Override
+    public void quserdeleteid(int id) {
+        userDao.quserdeleteid(id);
+    }
+
+    @Override
+    public void fuserdeleteid(String userid) {
+        userDao.fuserdeleteid(userid);
+    }
 }

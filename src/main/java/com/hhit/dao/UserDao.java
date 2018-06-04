@@ -25,4 +25,7 @@ public interface UserDao {
     List<User> selectAllfuser();//招聘者用户查询
 
     List<User> getAlluser();
+
+    void quserdeleteid(int id);
+    void fuserdeleteid(String userid);
 }

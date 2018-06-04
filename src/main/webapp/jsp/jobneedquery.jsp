@@ -66,7 +66,7 @@
                                         <td>${job.phonum}</td>
                                         <td>${job.bftime}</td>
                                         <td>${job.worktime}</td>
-                                        <td><a href="/user/deleteuser.action?id=${job.jobneedid}"
+                                        <td><a href="JobneedServlet/jobneeddeleteid?id=${job.jobneedid}"
                                                style="color: #0e90d2">删除</a>
                                         </td>
                                     </tr>

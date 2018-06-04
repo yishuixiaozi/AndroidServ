@@ -58,5 +58,11 @@
       SELECT * from user
    </select>
 
+   <delete id="quserdeleteid" parameterType="int">
+      DELETE from user where id=#{id}
+   </delete>
 
+   <delete id="fuserdeleteid" parameterType="String">
+      DELETE from fuser where userid=#{userid}
+   </delete>
 </mapper>

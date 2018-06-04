@@ -109,7 +109,6 @@
             </a>
             <ul>
                 <li><a class="menu_a" id="yo"  link="BackupServlet/querybackup"><i class="icon icon-caret-right"></i>数据库备份</a></li>
-                <li><a class="menu_a" id="yongh" link="/doucument/documentquery.action"><i class="icon icon-caret-right"></i>数据库恢复</a></li>
             </ul>
         </li>
     </ul>

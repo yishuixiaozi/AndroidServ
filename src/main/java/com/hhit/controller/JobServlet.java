@@ -241,4 +241,19 @@ public class JobServlet {
         listObject.setMsg("success");
         ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
     }
+
+    @RequestMapping("/updateJobpost")
+    public void updateJobpost(HttpServletRequest request,HttpServletResponse response,@RequestBody Job job){
+        System.out.println("------服务器执行更新");
+        jobService.updateJobpost(job);
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson("success"));
+    }
+
+    //服务器端删除
+    @RequestMapping("/jobdeleteid")
+    public String jobdeleteid(HttpServletRequest request){
+        int id= Integer.parseInt(request.getParameter("id"));
+        jobService.deleteByid(id);
+        return "redirect:jobquery";
+    }
 }

@@ -66,12 +66,8 @@
                                         <td>${singleObject.paymoney}</td>
                                         <td>${singleObject.payway}</td>
                                         <td>${singleObject.worktime}</td>
-                                        <td><a href="/user/deleteuser.action?id=${singleObject.signupid}"
-                                               style="color: #0e90d2">删除</a>||
-                                            <a href="jsp/update.jsp?username=${singleObject.signupid}
-                                                 &username=${singleObject.signupid}&password=${singleObject.signupid}
-                                                 &id=${singleObject.signupid}"
-                                               style="color: #0e90d2">修改</a>
+                                        <td><a href="SignupServlet/signupdeleteid?id=${singleObject.signupid}"
+                                               style="color: #0e90d2">删除</a>
                                         </td>
                                     </tr>
                                 </c:forEach>
