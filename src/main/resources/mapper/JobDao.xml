@@ -90,4 +90,12 @@
     <select id="getJobhomelike" resultType="com.hhit.model.Job">
         select * from jobhome where title like CONCAT('%',#{queryfield},'%') limit #{pagenum},8
     </select>
+
+    <select id="getJobremen" resultType="com.hhit.model.Job">
+        select * from jobhome ORDER BY viewtimes DESC limit 0,5;
+    </select>
+    <!--更新viewtimes的+1操作-->
+    <update id="updateviewtimes" >
+        UPDATE jobhome set viewtimes=#{viewtimes} where id=#{id}
+    </update>
 </mapper>

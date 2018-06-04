@@ -39,4 +39,10 @@ public interface JobDao {
     List<Job> getJobthrough(String userid);
     List<Job> getJobnothrough(String userid);
     List<Job> getJobnoreview(String userid);
+
+    //更新浏览次数
+    void updateviewtimes(@Param("viewtimes") int viewtimes,
+                         @Param("id") int id);
+
+    List<Job> getJobremen();
 }

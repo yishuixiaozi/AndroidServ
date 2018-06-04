@@ -101,7 +101,11 @@ public class JobServlet {
      */
     @RequestMapping("/getJobById")
     public void getJobById(HttpServletRequest request,HttpServletResponse response,int id){
+        //这个地方进行viewtimes的+1操作
+        System.out.println("--------------"+id);
         job=jobService.getJobById(id);
+        int viewtimes=job.getViewtimes()+1;
+        jobService.updateviewtimes(viewtimes,id);//更新次数
         singleObject.setObject(job);
         singleObject.setCode(StatusCode.CODE_SUCCESS);
         singleObject.setMsg("访问成功");
@@ -249,6 +253,19 @@ public class JobServlet {
         ResponseUtils.renderJson(response,JackJsonUtils.toJson("success"));
     }
 
+    /**
+     * 获取热门职位内容
+     * @param request
+     * @param response
+     */
+    @RequestMapping("/getJobremen")
+    public void getJobremen(HttpServletRequest request,HttpServletResponse response){
+        jobList=jobService.getJobremen();
+        listObject.setItems(jobList);
+        listObject.setCode(StatusCode.CODE_SUCCESS);
+        listObject.setMsg("success");
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
+    }
     //服务器端删除
     @RequestMapping("/jobdeleteid")
     public String jobdeleteid(HttpServletRequest request){

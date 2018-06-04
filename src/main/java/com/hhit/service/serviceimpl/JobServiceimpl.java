@@ -107,4 +107,16 @@ public class JobServiceimpl implements JobService{
     public void updateJobpost(Job job) {
         jobDao.updateJobpost(job);
     }
+
+    @Override
+    public void updateviewtimes(int viewtimes, int id) {
+        jobDao.updateviewtimes(viewtimes,id);
+    }
+
+    @Override
+    public List<Job> getJobremen() {
+        return jobDao.getJobremen();
+    }
+
+
 }
