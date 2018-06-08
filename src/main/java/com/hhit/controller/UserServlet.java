@@ -38,11 +38,27 @@ public class UserServlet {
     public void getUserById(HttpServletRequest request, HttpServletResponse response,String userid){
         System.out.println("getUserById----------"+userid);
         user=userService.getUserById(userid);
+        System.out.println("-----"+user.getUsername());
         user.setPassword(" ");
         singleObject.setCode(StatusCode.CODE_SUCCESS);
         singleObject.setObject(user);
         singleObject.setMsg("访问成功");
         ResponseUtils.renderJson(response, JackJsonUtils.toJson(singleObject));
+    }
+    @RequestMapping("/getUserByUserid2")
+    public void getUserById2(HttpServletRequest request, HttpServletResponse response){
+        String userid=request.getParameter("userid");
+        userService.getUserById(userid);
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson("success"));
+    }
+    @RequestMapping("/getUserByUserid")
+    public void getUserByUserid(HttpServletRequest request,HttpServletResponse response){
+        String userid=request.getParameter("userid");
+        user=userService.getUserByUserid(userid);
+        singleObject.setCode(StatusCode.CODE_SUCCESS);
+        singleObject.setObject(user);
+        singleObject.setMsg("success");
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson(singleObject));
     }
     /**
      * 依据求职者用户名，密码登陆处理结果
@@ -243,5 +259,17 @@ public class UserServlet {
         return "redirect:fuserquery";
     }
 
+    //求职者更新自我信息
+    @RequestMapping("/updateQuserinfo")
+    public void updateQuserinfo(HttpServletRequest request,HttpServletResponse response,@RequestBody User user){
+        userService.updateQuserinfo(user);
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson("success"));
+    }
+    //招聘者gengxin
+    @RequestMapping("/updateFuserinfo")
+    public void updateFuserinfo(HttpServletRequest request,HttpServletResponse response,@RequestBody User user){
+        userService.updateFuserinfo(user);
+        ResponseUtils.renderJson(response,JackJsonUtils.toJson("success"));
+    }
 
 }

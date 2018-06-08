@@ -85,4 +85,14 @@ public class UserServiceimpl implements UserService{
     public void fuserdeleteid(String userid) {
         userDao.fuserdeleteid(userid);
     }
+
+    @Override
+    public void updateQuserinfo(User user) {
+        userDao.updateQuserinfo(user);
+    }
+
+    @Override
+    public void updateFuserinfo(User user) {
+        userDao.updateFuserinfo(user);
+    }
 }

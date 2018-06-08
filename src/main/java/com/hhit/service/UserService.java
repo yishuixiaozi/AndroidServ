@@ -23,4 +23,6 @@ public interface UserService {
     List<User> getAlluser();
     void quserdeleteid(int id);
     void fuserdeleteid(String userid);
+    void updateQuserinfo(User user);
+    void updateFuserinfo(User user);
 }

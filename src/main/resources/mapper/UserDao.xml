@@ -8,7 +8,7 @@
    </select>
    <!--依据用户id返回用户所有的信息-->
    <select id="getUserById" resultType="com.hhit.model.User" parameterType="String">
-      select * from user where userid=#{id}
+      select * from fuser where userid=#{id}
    </select>
     <!--依据用户userid返回用户的所有的信息-->
     <select id="getUserByUserid" resultType="com.hhit.model.User" parameterType="String">
@@ -65,4 +65,14 @@
    <delete id="fuserdeleteid" parameterType="String">
       DELETE from fuser where userid=#{userid}
    </delete>
+
+   <update id="updateQuserinfo" parameterType="com.hhit.model.User">
+      update user set nickname=#{nickname},year=#{year},city=#{city},gender=#{gender},phonenum=#{phonenum},
+      sumary=#{sumary} where userid=#{userid}
+   </update>
+
+   <update id="updateFuserinfo" parameterType="com.hhit.model.User">
+      update fuser set nickname=#{nickname},year=#{year},city=#{city},gender=#{gender},phonenum=#{phonenum},
+      sumary=#{sumary} where userid=#{userid}
+   </update>
 </mapper>
