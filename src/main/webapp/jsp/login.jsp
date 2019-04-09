@@ -53,7 +53,7 @@
 <body>
 <div class="header">
     <div class="inner_c">
-        <div class="header_left">Design By Zhou</div>
+        <div class="header_left">Design By ZhouXiangrong</div>
         <div class="header_right">
             <div class="hri_left">
                 <ul>
@@ -80,7 +80,7 @@
         <div class="bc_right">
             <p></p>
             <form  method="post" id="loginform1">
-                <input type="text" class="name_input" id="username" name="username" for="reservation" placeholder="注册邮箱/用户名">
+                <input type="text" class="name_input" id="username" name="username" for="reservation" placeholder="用户名">
                 <input type="password" class="pass_input" id="password" name="password" for="reservation" placeholder="密码">
                 <input type="button" class="p_login" onclick="loginpass()" value="立即登录"/>
                 <%--<p class="p_login">立即登录</p>--%>

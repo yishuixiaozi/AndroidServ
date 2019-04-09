@@ -1,6 +1,7 @@
 package com.hhit.controller;
 
 import com.hhit.model.Job;
+import com.hhit.model.JobtypeBean;
 import com.hhit.service.JobService;
 import com.hhit.utils.*;
 import org.springframework.stereotype.Controller;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -29,6 +31,7 @@ public class JobServlet {
     SingleObject singleObject=new SingleObject();
     ListObject listObject=new ListObject();
 
+    String typeEnglish;
     /**
      * 依据客户端传递过来的参数按照每八条返回列表
      * @param request
@@ -68,14 +71,22 @@ public class JobServlet {
         listObject.setMsg("访问成功");
         ResponseUtils.renderJson(response,JackJsonUtils.toJson(listObject));
     }
-
+    /*
+    * 客户端招聘者用户发布招聘岗位所用
+    * 审核状态未审核是数据库默认的值的内容
+    * */
     @RequestMapping("/addJobBean")
-    public void addJobBean(HttpServletResponse response, HttpServletRequest request,@RequestBody Job job1){
+    public void addJobBean(HttpServletResponse response, HttpServletRequest request,@RequestBody Job job1) throws Exception {
         System.out.println("服务器职位添加");
+        IpmessageUtils ipmessageUtils = new IpmessageUtils();
+        typeEnglish = JobtypeBean.getTypeEnglish(job1.getJobtype());
+        //拼接一个图片的url地址出来利用不同的职业类型形成的对应的图片的url
+        String jobimageuri = ipmessageUtils.getIphostAddress()+typeEnglish+".png";
+        System.out.println("测试jobimageuri的内容"+jobimageuri);
+        job1.setJobimageuri(jobimageuri);
         jobService.addJobBean(job1);
         ResponseUtils.renderJson(response,JackJsonUtils.toJson("success"));
     }
-
     /**
      * 测试内容
      * @param request
@@ -272,5 +283,12 @@ public class JobServlet {
         int id= Integer.parseInt(request.getParameter("id"));
         jobService.deleteByid(id);
         return "redirect:jobquery";
+    }
+
+
+    @RequestMapping("/test")
+    public void test(HttpServletRequest request) throws Exception {
+        IpmessageUtils ipmessageUtils = new IpmessageUtils();
+        System.out.println("本地的电脑IP 是 "+ipmessageUtils.getIphostAddress()+ipmessageUtils.getIphostName());
     }
 }

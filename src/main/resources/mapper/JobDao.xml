@@ -88,7 +88,7 @@
     </delete>
 
     <select id="getJobhomelike" resultType="com.hhit.model.Job">
-        select * from jobhome where title like CONCAT('%',#{queryfield},'%') limit #{pagenum},8
+        select * from jobhome where title like CONCAT('%',#{queryfield},'%') and jobstate='已通过' limit #{pagenum},8
     </select>
 
     <select id="getJobremen" resultType="com.hhit.model.Job">

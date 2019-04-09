@@ -96,8 +96,8 @@ body{
     height: 350px;
     margin: 0px auto;
     /*background-color: #38b774;*/
-    border-bottom: 1px solid #EEEEEE;
-    border-top:1px solid #EEEEEE ;
+    border-bottom: 5px solid #EEEEEE;
+    border-top:5px solid #EEEEEE ;
 
 }
          /*图片部分*/
@@ -148,9 +148,9 @@ body{
             border-bottom: 1px solid #9A9A9A;
         }
         .bc_right .p_login:hover{
-            font-size: 18px;
+            font-size: 14px;
             cursor: default;
-            background-color: green;
+            background-color: red;
         }
             /*这部分是用户名输入框设计*/
             .name_input{
@@ -188,11 +188,11 @@ body{
                 margin-left: 276px;
             }
             .bc_right a:hover{
-                color: red;
+                color: green;
             }
 /*身体下部分，目前内容待定*/
 .bottom{
-   width: auto;
+    width: auto;
     background-color: #212121;
     margin-top: 48px;
 }

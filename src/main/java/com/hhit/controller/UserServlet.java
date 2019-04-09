@@ -134,6 +134,7 @@ public class UserServlet {
                 userService.updateUser2(user1);
             }
         }
+        System.out.println("-------------三方登录内容-----------");
         ResponseUtils.renderJson(response,JackJsonUtils.toJson(user1.getUserid()));
     }
     /**
